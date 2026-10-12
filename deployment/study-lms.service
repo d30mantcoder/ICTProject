@@ -1,0 +1,15 @@
+[Unit]
+Description=Study LMS FastAPI server
+After=default.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/nuras/Documents/AITU
+EnvironmentFile=/home/nuras/Documents/AITU/.env
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/nuras/Documents/AITU/.venv/bin/uvicorn backend.app.main:app --host 0.0.0.0 --port 1734
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

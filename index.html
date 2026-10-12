@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LMS Mobile</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#0f6cbf;--ic:#2a86b8;--text:#1d2125;--muted:#6a737b;--line:#dee2e6;--tint:#e8f1f8;--ease:cubic-bezier(.32,.72,0,1)}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{font-family:'Inter',system-ui,sans-serif;background:#e9ecef;color:var(--text);display:flex;justify-content:center;padding:24px 12px}
+.phone{position:relative;width:390px;height:844px;background:#fff;overflow:hidden;flex:none;box-shadow:0 8px 30px rgba(0,0,0,.18)}
+@media(max-width:430px){body{padding:0;background:#fff}.phone{width:100%;height:100dvh;min-height:700px;box-shadow:none}}
+
+.status{position:absolute;top:0;left:0;right:0;height:44px;display:flex;align-items:center;justify-content:space-between;padding:6px 26px 0 38px;font-weight:600;font-size:15px;z-index:30;background:#fff}
+.status .r{display:flex;gap:6px;align-items:center}
+
+.header{position:absolute;top:44px;left:0;right:0;height:63px;border-bottom:1px solid var(--line);background:#fff;display:flex;align-items:center;padding:0 16px;z-index:20}
+.burger{position:relative;width:40px;height:40px;border-radius:6px;cursor:pointer;margin-right:12px;color:var(--ic);background:transparent;transition:background .3s ease}
+.burger svg{position:absolute;inset:8px;transition:opacity .25s ease,transform .35s var(--ease)}
+.burger .x{opacity:0;transform:rotate(-90deg) scale(.6)}
+.burger.on{background:var(--tint)}
+.burger.on .m{opacity:0;transform:rotate(90deg) scale(.6)}
+.burger.on .x{opacity:1;transform:none}
+.logo{font-size:20px;font-weight:600;color:var(--blue);flex:1;letter-spacing:.2px;cursor:pointer}
+
+.user{cursor:pointer;color:#5f6c76}
+.pill{display:flex;align-items:center;height:40px;border-radius:8px;background:var(--tint);padding:0 10px 0 14px;gap:14px;transition:background .3s ease,padding .35s var(--ease),gap .35s var(--ease)}
+.circ{display:flex;align-items:center;justify-content:center;height:32px;width:18px;border-radius:16px;background:transparent;transition:width .35s var(--ease),background .3s ease}
+.av{font-size:12px;font-weight:700;color:var(--blue)}
+.chev{width:12px;height:12px;transition:transform .3s var(--ease)}
+.user.open .chev{transform:rotate(180deg)}
+.phone.nav .pill{background:transparent;padding:0;gap:6px}
+.phone.nav .circ{width:32px;background:var(--tint)}
+
+/* страница */
+.page{position:absolute;top:108px;left:0;right:0;bottom:0;overflow-y:auto;overflow-x:hidden;padding:26px 24px 56px;-webkit-overflow-scrolling:touch}
+.page::-webkit-scrollbar{width:0}
+.view>*{animation:rise .5s var(--ease) both}
+.view>*:nth-child(2){animation-delay:.04s}.view>*:nth-child(3){animation-delay:.08s}.view>*:nth-child(4){animation-delay:.12s}.view>*:nth-child(5){animation-delay:.16s}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.small{font-size:13px;color:var(--muted);margin-bottom:6px}
+.hi{font-size:24px;line-height:32px}
+.h1{font-size:24px;line-height:32px}
+.h2{font-size:24px;margin-top:30px}
+.sub{display:block;text-align:right;color:var(--blue);font-size:16px;margin:22px 0 20px;text-decoration:none}
+.lead{font-size:15px;color:var(--muted);margin:4px 0 18px}
+.card{border:1px solid var(--line);border-radius:8px;padding:18px 16px 16px;display:flex;gap:12px;flex-wrap:wrap}
+.card .ico{width:20px;height:20px;margin-top:2px;color:#6a737b;flex:none}
+.card h3{flex:1;font-size:17px;line-height:22px;font-weight:700;min-width:0;max-width:280px}
+.card p{width:100%;font-size:17px;line-height:26px;margin-top:6px}
+.card a{color:var(--blue);text-decoration:none}
+
+/* курсы */
+.search{position:relative;margin:16px 0 14px}
+.search input{width:100%;height:44px;border:1px solid var(--line);border-radius:8px;padding:0 14px 0 40px;font:inherit;font-size:16px;color:var(--text);outline:none;transition:border-color .2s,box-shadow .2s}
+.search input:focus{border-color:#8fbfe6;box-shadow:0 0 0 3px rgba(15,108,191,.12)}
+.search svg{position:absolute;left:12px;top:12px;color:var(--muted)}
+.course{display:flex;gap:14px;align-items:center;padding:14px;border:1px solid var(--line);border-radius:8px;margin-bottom:12px;text-decoration:none;color:inherit;transition:background .2s,transform .2s}
+.course:active{background:#f6f8fa;transform:scale(.99)}
+.tile{width:52px;height:52px;border-radius:10px;flex:none;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:16px;letter-spacing:.3px}
+.cinfo{flex:1;min-width:0}
+.cname{font-size:16px;font-weight:600;line-height:21px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.cmeta{font-size:13px;color:var(--muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.prog{display:flex;align-items:center;gap:10px;margin-top:9px}
+.bar{flex:1;height:6px;border-radius:3px;background:#e9ecef;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:3px;background:var(--blue);width:0;transition:width .9s var(--ease) .15s}
+.pct{font-size:12px;color:var(--muted);min-width:34px;text-align:right}
+.empty{text-align:center;color:var(--muted);padding:40px 0;font-size:15px}
+
+/* оценки */
+.table{border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.trow{display:flex;gap:12px;align-items:center;padding:14px 16px;border-top:1px solid var(--line);font-size:15px;line-height:20px}
+.trow:first-child{border-top:0}
+.trow.head{background:#f6f8fa;font-weight:600;font-size:13px;color:var(--muted);padding:11px 16px;text-transform:uppercase;letter-spacing:.4px}
+.trow .n{flex:1;min-width:0}
+.trow .g{width:56px;text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+.trow .n a{color:var(--blue);text-decoration:none}
+
+/* календарь */
+.calhead{display:flex;align-items:center;justify-content:space-between;margin:4px 0 12px}
+.calhead h2{font-size:18px;font-weight:600}
+.nb{width:40px;height:40px;border-radius:8px;border:1px solid var(--line);background:#fff;color:var(--ic);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s,transform .2s}
+.nb:active{background:var(--tint);transform:scale(.94)}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);row-gap:2px}
+.dow{text-align:center;font-size:12px;font-weight:600;color:var(--muted);padding:6px 0;text-transform:uppercase}
+.cell{position:relative;height:50px;display:flex;align-items:center;justify-content:center;cursor:pointer;border:0;background:none;font:inherit;color:var(--text)}
+.cell.blank{cursor:default}
+.cell .num{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;transition:background .25s,color .25s,box-shadow .25s}
+.cell.we .num{color:#8a949c}
+.cell.today .num{background:var(--blue);color:#fff;font-weight:600}
+.cell.sel .num{box-shadow:0 0 0 2px var(--blue)}
+.cell:not(.blank):active .num{background:var(--tint)}
+.cell.today:active .num{background:var(--blue)}
+.dots{position:absolute;bottom:2px;left:0;right:0;display:flex;justify-content:center;gap:3px;height:5px}
+.dots i{width:5px;height:5px;border-radius:50%}
+.t-a{background:#7a8a99}.t-o{background:#2e9d5b}.t-c{background:#e08a1e}.t-d{background:#d04a4a}
+.dayhead{margin:20px 0 10px;font-size:17px;font-weight:600}
+.dayhead span{color:var(--muted);font-weight:400;font-size:14px;margin-left:6px}
+.ev{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border:1px solid var(--line);border-radius:8px;margin-bottom:8px;animation:rise .4s var(--ease) both}
+.ev i{width:10px;height:10px;border-radius:50%;margin-top:5px;flex:none}
+.ev b{display:block;font-weight:500;font-size:15px;line-height:20px}
+.ev small{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:16px;font-size:12px;color:var(--muted)}
+.legend span{display:flex;align-items:center;gap:6px}
+.legend i{width:8px;height:8px;border-radius:50%}
+
+/* настройки */
+.pcard{border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.pcard h3{font-size:17px;font-weight:700;padding:16px 16px 8px}
+.prow{display:flex;align-items:center;justify-content:space-between;height:50px;padding:0 16px;font-size:16px;color:var(--blue);cursor:pointer;border-top:1px solid var(--line);transition:background .2s}
+.prow:first-of-type{border-top:0}
+.prow:active{background:#f6f8fa}
+.prow svg{color:#9aa4ac}
+
+.ph{display:flex;flex-direction:column;align-items:center;text-align:center;padding:70px 0;color:var(--muted);gap:14px;font-size:15px}
+.ph .bigic{width:72px;height:72px;border-radius:50%;background:var(--tint);color:var(--ic);display:flex;align-items:center;justify-content:center}
+
+/* меню профиля */
+.drop{position:absolute;top:105px;right:17px;width:194px;background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,.14);z-index:25;transform-origin:top right;opacity:0;visibility:hidden;transform:translateY(-8px) scale(.96);transition:opacity .22s ease,transform .3s var(--ease),visibility 0s linear .3s}
+.drop.show{opacity:1;visibility:visible;transform:none;transition:opacity .22s ease,transform .3s var(--ease),visibility 0s}
+.drop div{display:flex;align-items:center;gap:12px;height:50px;padding:0 18px;font-size:16px;cursor:pointer;transition:background .2s}
+.drop div:active{background:#f3f5f7}
+.drop svg{color:var(--ic);flex:none}
+
+/* бургер-меню */
+.overlay{position:absolute;top:108px;left:0;right:0;bottom:0;background:rgba(120,128,136,.5);z-index:10;opacity:0;pointer-events:none;transition:opacity .35s ease}
+.phone.nav .overlay{opacity:1;pointer-events:auto}
+.drawer{position:absolute;top:108px;left:0;width:304px;bottom:0;background:#fff;z-index:15;padding:24px 16px;transform:translateX(-100%);visibility:hidden;transition:transform .4s var(--ease),box-shadow .4s ease,visibility 0s linear .4s}
+.phone.nav .drawer{transform:none;visibility:visible;box-shadow:6px 0 24px rgba(0,0,0,.12);transition:transform .4s var(--ease),box-shadow .4s ease,visibility 0s}
+.drawer h2{font-size:20px;font-weight:600;margin:-2px 0 24px}
+.drawer a{display:flex;align-items:center;gap:16px;height:58px;font-size:16px;color:var(--text);text-decoration:none;padding-left:10px;border-radius:8px;opacity:0;transform:translateX(-14px);transition:opacity .25s ease,transform .25s ease,background .25s,color .25s;cursor:pointer}
+.drawer a:active{background:#f3f5f7}
+.drawer a.active{background:var(--tint);color:var(--blue);font-weight:500}
+.drawer a svg{color:var(--ic);flex:none}
+.phone.nav .drawer a{opacity:1;transform:none;transition:opacity .4s ease calc(.08s + var(--i)*.04s),transform .45s var(--ease) calc(.08s + var(--i)*.04s),background .25s,color .25s}
+
+.home{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);width:134px;height:5px;border-radius:3px;background:#000;z-index:40}
+svg{display:block}
+.s{fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+/* экран входа */
+.login{position:absolute;top:44px;left:0;right:0;bottom:0;background:#fff;z-index:35;overflow-y:auto;padding:36px 24px 56px;display:flex;flex-direction:column;transition:opacity .45s ease,transform .6s var(--ease),visibility 0s linear .6s}
+.login::-webkit-scrollbar{width:0}
+.login.hide{opacity:0;transform:translateY(-28px);visibility:hidden;pointer-events:none}
+.login>*{animation:rise .6s var(--ease) both}
+.login>*:nth-child(2){animation-delay:.05s}.login>*:nth-child(3){animation-delay:.1s}.login>*:nth-child(5){animation-delay:.15s}.login>*:nth-child(6){animation-delay:.2s}.login>*:nth-child(7){animation-delay:.25s}
+.lg-logo{width:68px;height:68px;border-radius:18px;background:linear-gradient(135deg,#2a86b8,#0f6cbf);color:#fff;font-weight:700;font-size:20px;letter-spacing:.5px;display:flex;align-items:center;justify-content:center;align-self:center;margin-bottom:26px;box-shadow:0 8px 20px rgba(15,108,191,.28)}
+.lg-h{font-size:28px;font-weight:600;line-height:34px}
+.lg-sub{color:var(--muted);font-size:16px;margin:4px 0 22px}
+.lg-err{display:none;background:#fdecee;color:#b3261e;border:1px solid #f3c1c5;border-radius:8px;padding:11px 14px;font-size:14px;margin-bottom:16px}
+.lg-err.show{display:block;animation:rise .3s var(--ease) both}
+.lg-label{display:block;font-size:14px;font-weight:500;margin:0 0 6px}
+.lg-input{width:100%;height:48px;border:1px solid #ced4da;border-radius:8px;padding:0 14px;font:inherit;font-size:16px;color:var(--text);background:#fff;outline:none;margin-bottom:16px;transition:border-color .2s,box-shadow .2s}
+.lg-input:focus{border-color:#8fbfe6;box-shadow:0 0 0 3px rgba(15,108,191,.14)}
+.lg-input.bad{border-color:#d9534f}
+.lg-pw{position:relative}
+.lg-pw .lg-input{padding-right:48px}
+.lg-eye{position:absolute;right:4px;top:4px;width:40px;height:40px;border:0;background:none;color:#6a737b;display:flex;align-items:center;justify-content:center;cursor:pointer;border-radius:8px}
+.lg-eye:active{background:#f1f3f5}
+.lg-forgot{align-self:flex-end;display:block;text-align:right;color:var(--blue);text-decoration:none;font-size:15px;margin:-4px 0 18px}
+.lg-btn{position:relative;width:100%;height:48px;border:1px solid var(--blue);border-radius:8px;background:var(--blue);color:#fff;font:inherit;font-size:16px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:transform .2s,background .2s,opacity .2s}
+.lg-btn:active{transform:scale(.985);background:#0b5ea7}
+.lg-btn.out{background:#fff;color:var(--text);border-color:#ced4da;font-weight:500}
+.lg-btn.out:active{background:#f6f8fa}
+.lg-btn.out svg{color:var(--ic)}
+.demo-login{margin-top:20px}
+.demo-title{font-size:14px;font-weight:600;margin-bottom:9px}
+.demo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.demo-btn{min-width:0;border:1px solid var(--line);border-radius:8px;background:#fff;padding:10px 7px;color:var(--text);font:inherit;text-align:left;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.demo-btn:active{background:var(--tint);border-color:#8fbfe6;transform:scale(.98)}
+.demo-btn strong{display:block;font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.demo-btn small{display:block;margin-top:3px;color:var(--muted);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.demo-note{margin-top:7px;color:var(--muted);font-size:12px}
+.lg-btn .bt{transition:opacity .2s}
+.lg-btn.load{pointer-events:none}
+.lg-btn.load .bt{opacity:0}
+.lg-btn.load::after{content:"";position:absolute;width:20px;height:20px;border:2.5px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite}
+.lg-btn.out.load::after{border-color:#d5dbe0;border-top-color:var(--blue)}
+.lg-btn.out.load>*{opacity:0}
+@keyframes spin{to{transform:rotate(360deg)}}
+.lg-or{display:flex;align-items:center;gap:14px;color:var(--muted);font-size:13px;margin:26px 0}
+.lg-or::before,.lg-or::after{content:"";flex:1;height:1px;background:var(--line)}
+.lg-lang{align-self:center;margin:30px 0 10px;border:0;background:none;font:inherit;font-size:15px;color:var(--text);display:flex;align-items:center;gap:8px;cursor:pointer;padding:8px 12px;border-radius:8px}
+.lg-lang:active{background:#f1f3f5}
+.lg-cookie{align-self:center;color:var(--muted);font-size:14px;text-decoration:none}
+.shake{animation:shake .4s ease}
+@keyframes shake{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+@media(prefers-reduced-motion:reduce){*{transition-duration:.01s!important;transition-delay:0s!important;animation-duration:.01s!important;animation-delay:0s!important}}
+.staff-panel{display:none;position:absolute;inset:0;z-index:30;overflow:auto;background:#f7f8fa;padding:22px 18px;color:var(--text)}
+.staff-panel.show{display:block}.staff-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px}
+.staff-top h1{font-size:23px;margin:0}.staff-top button,.staff-action{border:0;border-radius:8px;padding:9px 13px;background:#175f91;color:#fff;font:inherit;cursor:pointer}
+.staff-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;margin:12px 0}
+.staff-card h2{font-size:17px;margin:0 0 12px}.staff-form{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.staff-form input,.staff-form select,.staff-select,.staff-grade{border:1px solid #ccd2d8;border-radius:7px;padding:9px;font:inherit;background:#fff}
+.staff-scroll{overflow:auto}.staff-table{width:100%;border-collapse:collapse;background:#fff;font-size:14px}.staff-table th,.staff-table td{text-align:left;border-bottom:1px solid #e5e7eb;padding:9px 7px;white-space:nowrap}.staff-table th{font-weight:600}
+.staff-status{min-height:20px;color:#245b38;font-size:14px;margin:8px 0}.staff-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(90px,1fr));gap:8px}.staff-stat{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px}.staff-stat b{display:block;font-size:22px}.staff-muted{color:#68717c;font-size:13px}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+<defs>
+<symbol id="i-user" viewBox="0 0 24 24"><circle class="s" cx="12" cy="8" r="4"/><path class="s" d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></symbol>
+<symbol id="i-out" viewBox="0 0 24 24"><path class="s" d="M10 4H5v16h5M15 8l4 4-4 4M19 12H9"/></symbol>
+<symbol id="i-dash" viewBox="0 0 24 24"><rect class="s" x="3" y="3" width="7" height="9" rx="1.5"/><rect class="s" x="14" y="3" width="7" height="5" rx="1.5"/><rect class="s" x="14" y="12" width="7" height="9" rx="1.5"/><rect class="s" x="3" y="16" width="7" height="5" rx="1.5"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path class="s" d="M2 5c3-1 7-1 10 2 3-3 7-3 10-2v14c-3-1-7-1-10 2-3-3-7-3-10-2zM12 7v14"/></symbol>
+<symbol id="i-grad" viewBox="0 0 24 24"><path class="s" d="M12 4 2 9l10 5 10-5zM6 11.5V16c3 3 9 3 12 0v-4.5M22 9v6"/></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24"><rect class="s" x="3" y="5" width="18" height="16" rx="2"/><path class="s" d="M3 10h18M8 3v4M16 3v4M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></symbol>
+<symbol id="i-folder" viewBox="0 0 24 24"><path class="s" d="M3 6a2 2 0 0 1 2-2h4l2 3h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path class="s" d="M3 21h18M5 21v-5M9 21v-9M13 21v-6M17 21v-11M4 12l5-4 4 3 7-7M16 4h4v4"/></symbol>
+<symbol id="i-gear" viewBox="0 0 24 24"><circle class="s" cx="12" cy="12" r="3"/><path class="s" d="M12 2.5l2 1.8 2.6-.4 1 2.5 2.5 1-.4 2.6L21.5 12l-1.8 2 .4 2.6-2.5 1-1 2.5-2.6-.4-2 1.8-2-1.8-2.6.4-1-2.5-2.5-1 .4-2.6L2.5 12l1.8-2-.4-2.6 2.5-1 1-2.5 2.6.4z"/></symbol>
+<symbol id="i-menu" viewBox="0 0 24 24"><path class="s" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24"><path class="s" d="M5 5l14 14M19 5L5 19"/></symbol>
+<symbol id="i-chev" viewBox="0 0 12 12"><path class="s" d="M2 4.5l4 4 4-4"/></symbol>
+<symbol id="i-right" viewBox="0 0 24 24"><path class="s" d="M9 5l7 7-7 7"/></symbol>
+<symbol id="i-left" viewBox="0 0 24 24"><path class="s" d="M15 5l-7 7 7 7"/></symbol>
+<symbol id="i-eye" viewBox="0 0 24 24"><path class="s" d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle class="s" cx="12" cy="12" r="3"/></symbol>
+<symbol id="i-eyeoff" viewBox="0 0 24 24"><path class="s" d="M3 3l18 18M10.6 5.1A10 10 0 0 1 12 5c6.500 0 10 7 10 7a17 17 0 0 1-3.200 4M6.600 6.600A16.500 16.500 0 0 0 2 12s3.500 7 10 7c1.600 0 3-.4 4.300-1M9.900 9.900a3 3 0 0 0 4.200 4.200"/></symbol>
+<symbol id="i-key" viewBox="0 0 24 24"><circle class="s" cx="8" cy="15" r="4"/><path class="s" d="M11 12l9-9M16 7l3 3M14 9l2 2"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle class="s" cx="11" cy="11" r="7"/><path class="s" d="M20 20l-4-4"/></symbol>
+<symbol id="i-circle-user" viewBox="0 0 24 24"><circle class="s" cx="12" cy="12" r="9"/><circle class="s" cx="12" cy="10" r="3"/><path class="s" d="M6.5 18c1-2.5 3-3.5 5.5-3.5s4.5 1 5.5 3.5"/></symbol>
+</defs>
+</svg>
+
+<div class="phone" id="phone">
+  <div class="status"><span>9:41</span>
+    <div class="r">
+      <svg width="18" height="12" viewBox="0 0 18 12" fill="#000"><rect x="0" y="8" width="3" height="4" rx=".8"/><rect x="5" y="5.5" width="3" height="6.5" rx=".8"/><rect x="10" y="3" width="3" height="9" rx=".8"/><rect x="15" y="0" width="3" height="12" rx=".8"/></svg>
+      <svg width="17" height="12" viewBox="0 0 17 12" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round"><path d="M1.5 4.2a10 10 0 0 1 14 0M4 7a6.4 6.4 0 0 1 9 0"/><circle cx="8.5" cy="10" r="1.2" fill="#000" stroke="none"/></svg>
+      <svg width="27" height="13" viewBox="0 0 27 13"><rect x=".5" y=".5" width="22" height="12" rx="3.5" fill="none" stroke="#000" opacity=".4"/><rect x="2" y="2" width="19" height="9" rx="2.2" fill="#000"/><path d="M24 4.5v4c1-.3 1.8-1.2 1.8-2s-.8-1.7-1.8-2z" fill="#000" opacity=".5"/></svg>
+    </div>
+  </div>
+
+  <div class="header">
+    <div class="burger" id="burger" role="button" aria-label="Menu">
+      <svg class="m" width="24" height="24"><use href="#i-menu"/></svg>
+      <svg class="x" width="24" height="24"><use href="#i-x"/></svg>
+    </div>
+    <div class="logo" id="logo">LMS</div>
+    <div class="user" id="user" role="button" aria-label="Account">
+      <div class="pill"><span class="circ"><span class="av">SI</span></span><svg class="chev"><use href="#i-chev"/></svg></div>
+    </div>
+  </div>
+
+  <div class="drop" id="drop">
+    <div><svg width="20" height="20"><use href="#i-user"/></svg>Profile</div>
+    <div id="logout"><svg width="20" height="20"><use href="#i-out"/></svg>Log out</div>
+  </div>
+
+  <div class="page" id="page"><div class="view" id="view"></div></div>
+
+  <div class="overlay" id="overlay"></div>
+  <nav class="drawer" id="drawer">
+    <h2>Navigation</h2>
+    <a data-route="home" style="--i:0"><svg width="24" height="24"><use href="#i-dash"/></svg>Dashboard</a>
+    <a data-route="courses" style="--i:1"><svg width="24" height="24"><use href="#i-book"/></svg>My courses</a>
+    <a data-route="grades" style="--i:2"><svg width="24" height="24"><use href="#i-grad"/></svg>Grades</a>
+    <a data-route="calendar" style="--i:3"><svg width="24" height="24"><use href="#i-cal"/></svg>Calendar</a>
+    <a data-route="files" style="--i:4"><svg width="24" height="24"><use href="#i-folder"/></svg>Private files</a>
+    <a data-route="reports" style="--i:5"><svg width="24" height="24"><use href="#i-chart"/></svg>Reports</a>
+    <a data-route="prefs" style="--i:6"><svg width="24" height="24"><use href="#i-gear"/></svg>Preferences</a>
+  </nav>
+  <!-- ===== Экран входа ===== -->
+  <section class="login" id="login">
+    <div class="lg-logo">LMS</div>
+    <h1 class="lg-h" data-i18n="welcome">Welcome back</h1>
+    <p class="lg-sub" data-i18n="sub">Log in to Site home</p>
+    <div class="lg-err" id="lgerr" role="alert"></div>
+    <form id="lgform" novalidate>
+      <label class="lg-label" for="lgu" data-i18n="user">Username</label>
+      <input class="lg-input" id="lgu" type="text" autocomplete="username" data-i18n-ph="userPh" placeholder="Enter your username">
+      <label class="lg-label" for="lgp" data-i18n="pass">Password</label>
+      <div class="lg-pw">
+        <input class="lg-input" id="lgp" type="password" autocomplete="current-password" data-i18n-ph="passPh" placeholder="Enter your password">
+        <button type="button" class="lg-eye" id="lgeye" aria-label="Toggle password"><svg width="20" height="20"><use href="#i-eye"/></svg></button>
+      </div>
+      <a class="lg-forgot" href="#" data-i18n="forgot">Forgot password?</a>
+      <button class="lg-btn" id="lgbtn" type="submit"><span class="bt" data-i18n="login">Log in</span></button>
+    </form>
+    <div class="demo-login">
+      <div class="demo-title" data-i18n="demoTitle">Quick demo login</div>
+      <div class="demo-grid">
+        <button class="demo-btn" type="button" data-demo-user="student001"><strong>Aruzhan</strong><small>student001 · SE-101</small></button>
+        <button class="demo-btn" type="button" data-demo-user="student002"><strong>Amina</strong><small>student002 · SE-102</small></button>
+        <button class="demo-btn" type="button" data-demo-user="student003"><strong>Diana</strong><small>student003 · SE-103</small></button>
+        <button class="demo-btn" type="button" data-demo-user="teacher001"><strong>Teacher demo</strong><small>teacher001</small></button>
+        <button class="demo-btn" type="button" data-demo-user="admin001"><strong>Admin demo</strong><small>admin001</small></button>
+      </div>
+      <div class="demo-note" data-i18n="demoPass">Demo password: Study2026!</div>
+    </div>
+    <div class="lg-or"><span data-i18n="or">OR</span></div>
+    <button class="lg-btn out" id="lgoidc" type="button"><svg width="22" height="22"><use href="#i-key"/></svg><span data-i18n="oidc">Log in with OpenID Connect</span></button>
+    <button class="lg-lang" id="lglang" type="button"><span id="lglabel">English (en)</span><svg width="12" height="12"><use href="#i-chev"/></svg></button>
+    <a class="lg-cookie" href="#" data-i18n="cookies">Cookies notice</a>
+  </section>
+
+  <section class="staff-panel" id="staffPanel" aria-live="polite">
+    <div class="staff-top"><div><h1 id="staffTitle">Staff workspace</h1><div class="staff-muted" id="staffIdentity"></div></div><button type="button" id="staffLogout">Log out</button></div>
+    <div id="staffStatus" class="staff-status"></div>
+    <div id="staffContent"></div>
+  </section>
+
+  <div class="home"></div>
+</div>
+
+<script>
+(function(){
+  var API_BASE=location.port==='1734'?location.origin:'http://'+(location.hostname||'127.0.0.1')+':1734';
+  /* ---------- данные ---------- */
+  var COURSES=[
+    {id:2566,name:'Calculus 1',teacher:'Zhanat Zhuldasov',p:0},
+    {id:2545,name:'Cultural Studies',teacher:'Alzhanova Gaukhar',p:14},
+    {id:2587,name:'Foreign Language 1 (B2)',teacher:'Ardakh Bayan',p:0},
+    {id:2636,name:'Information and Communication Technologies',teacher:'Kazbekova Diana',p:25},
+    {id:2588,name:'Introduction to Programming 1',teacher:'Nadirov Nurtas',p:0},
+    {id:2648,name:'Linear Algebra',teacher:'Mukhamedina Anara',p:14},
+    {id:2751,name:'Physical Education (Badminton)',teacher:'Sadvokassova Saltanat',p:0}
+  ];
+  var STUDENT={first_name:'Salima',last_name:'Demo',group:'SE-2623'};
+  var STUDENT_PREFS={language:'en',theme:'light',notifications_enabled:true};
+  var GRADES=[2751,2648,2636,2588,2587,2566,2545]; // порядок как в отчёте
+  var COLORS=['#2a86b8','#5b6fd6','#2e9d5b','#e08a1e','#d0577a','#7a5bc7','#3a8f96'];
+  function byId(id){return COURSES.filter(function(c){return c.id===id})[0]}
+  function initials(n){var w=n.replace(/[()]/g,'').split(/\s+/).filter(function(x){return /^[A-Za-z]/.test(x)});return (w[0][0]+(w[1]?w[1][0]:'')).toUpperCase()}
+  function lmsUrl(id){return '#courses'}
+
+  var A=['a','Attendance (Group SE-2623)'], B=['a','Attendance (Group Badminton/2 PE21-EN-P97)'];
+  var EV={ // октябрь 2026
+    1:[A],2:[A,A],3:[A],
+    4:[['c','Week 2 Quiz closes'],['c','Week 1 Quiz closes'],['d','Assignment 4 is due'],['c','Week 3 Quiz closes']],
+    5:[A,B,B,['c','Week 4 Quiz closes'],['d','Assignment 2: Case Study Presentation is due']],
+    6:[A,A,A],
+    7:[A,A,['o','Lecture Quiz 5 for IoT-2603 opens'],['c','Lecture Quiz 3 for IoT-2603 closes'],['c','Lecture Quiz 4(IoT-2603) closes'],['c','Lecture Quiz 5 for IoT-2603 closes'],A],
+    8:[A],
+    9:[A,A,['d','Midterm is due']],
+    10:[A,['o','Midterm, Saturday, 12:00-12:50 pm opens'],['c','Midterm, Saturday, 12:00-12:50 pm closes'],['o','Lecture Quiz 1 for IoT-2603 opens'],['d','Midterm paper quiz (30%) is due']],
+    11:[['c','Lecture Quiz 1 for IoT-2603 closes'],['d','Assignment 5 is due']],
+    12:[A,B,B,['d','Assignment 3 is due']],
+    13:[A,A,A],14:[A,A],15:[A],16:[A,A],17:[A],
+    19:[A,B,B],20:[A,A,A],21:[A,A],22:[A],
+    23:[A,A,['d','Assignment 4 is due']],
+    24:[A],25:[['d','Endterm is due']],
+    26:[A,B,B],27:[A,A,A],28:[A,A],29:[A],30:[A,A],31:[A]
+  };
+  var TLABEL={a:'Attendance',o:'Opens',c:'Closes',d:'Due'};
+  var MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var DOW=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+  var TODAY={y:2026,m:9,d:11};
+  var cal={y:2026,m:9,sel:11};
+  var SCHEDULE=[];
+  function eventsForDate(y,m,d){
+    var events=(y===2026&&m===9)?(EV[d]||[]).slice():[];
+    var weekday=(new Date(y,m,d).getDay()+6)%7;
+    SCHEDULE.filter(function(x){return x.weekday===weekday}).forEach(function(x){events.push(['a',x.starts_at+' · '+x.course+' · '+x.room])});
+    return events;
+  }
+
+  var PREFS=['Edit profile','Preferred language','Forum preferences','Editor preferences','Calendar preferences','Content bank preferences','Message preferences','Notification preferences'];
+
+  /* ---------- шаблоны страниц ---------- */
+  var VIEWS={
+    home:function(){return ''+
+      '<div class="small">Site home</div>'+
+      '<div class="hi">Hi, '+STUDENT.first_name+'! 👋</div>'+
+      '<div class="h2">Объявления сайта</div>'+
+      '<a class="sub" href="#">Subscribe to forum</a>'+
+      '<div class="card"><svg class="ico"><use href="#i-circle-user"/></svg>'+
+      '<h3>Transfer of Academic Credits for Courses in the 2nd Trimester of the 2026–2027 Academic Year</h3>'+
+      '<p>by <a href="#">Botagoz Issatayeva</a> - Tuesday, 6 October 2026, 12:37 PM</p></div>';},
+
+    courses:function(){return ''+
+      '<div class="small">Site pages</div><div class="h1">My courses</div>'+
+      '<div class="search"><svg width="20" height="20"><use href="#i-search"/></svg><input id="q" type="text" placeholder="Search" autocomplete="off"></div>'+
+      '<div id="clist">'+courseList('')+'</div>';},
+
+    grades:function(){
+      var rows=GRADES.map(function(id){var c=byId(id);
+        return '<div class="trow"><div class="n"><a href="#grades">'+c.name+' | '+c.teacher+'</a></div><div class="g">'+(c.grade==null?'—':c.grade.toFixed(2))+'</div></div>';}).join('');
+      return '<div class="small">Grades</div><div class="h1">Courses I am taking</div><div class="lead">'+COURSES.length+' courses</div>'+
+      '<div class="table"><div class="trow head"><div class="n">Course name</div><div class="g">Grade</div></div>'+rows+'</div>';},
+
+    calendar:function(){return ''+
+      '<div class="small">Home</div><div class="h1">Calendar</div>'+
+      '<div id="calbox">'+calHTML()+'</div>';},
+
+    prefs:function(){return ''+
+      '<div class="small">Home</div><div class="h1">Preferences</div><div class="lead">Language: '+STUDENT_PREFS.language.toUpperCase()+' · Theme: '+STUDENT_PREFS.theme+' · Notifications: '+(STUDENT_PREFS.notifications_enabled?'on':'off')+'</div>'+
+      '<div class="pcard"><h3>User account</h3>'+PREFS.map(function(p){return '<div class="prow">'+p+'<svg width="18" height="18"><use href="#i-right"/></svg></div>'}).join('')+'</div>';},
+
+    files:function(){return placeholder('Private files','i-folder');},
+    reports:function(){return placeholder('Reports','i-chart');}
+  };
+  function placeholder(t,ic){return '<div class="h1">'+t+'</div><div class="ph"><div class="bigic"><svg width="34" height="34"><use href="#'+ic+'"/></svg></div>Раздел пока пуст</div>';}
+
+  function courseList(q){
+    q=q.trim().toLowerCase();
+    var l=COURSES.filter(function(c){return !q||(c.name+' '+c.teacher).toLowerCase().indexOf(q)>-1});
+    if(!l.length) return '<div class="empty">Nothing found</div>';
+    return l.map(function(c){var i=COURSES.indexOf(c);
+      return '<a class="course" href="'+lmsUrl(c.id)+'" target="_blank" rel="noopener">'+
+        '<div class="tile" style="background:'+COLORS[i%COLORS.length]+'">'+initials(c.name)+'</div>'+
+        '<div class="cinfo"><div class="cname">'+c.name+'</div><div class="cmeta">'+c.teacher+' · Trimester 1</div>'+
+        '<div class="prog"><div class="bar"><i data-w="'+c.p+'"></i></div><div class="pct">'+c.p+'%</div></div></div></a>';}).join('');
+  }
+  function animateBars(){requestAnimationFrame(function(){requestAnimationFrame(function(){
+    document.querySelectorAll('.bar i').forEach(function(b){b.style.width=b.getAttribute('data-w')+'%'});});});}
+
+  /* ---------- календарь ---------- */
+  function calHTML(){
+    var y=cal.y,m=cal.m,first=(new Date(y,m,1).getDay()+6)%7,days=new Date(y,m+1,0).getDate();
+    var h='<div class="calhead"><div class="nb" data-nav="-1"><svg width="20" height="20"><use href="#i-left"/></svg></div>'+
+          '<h2>'+MONTHS[m]+' '+y+'</h2><div class="nb" data-nav="1"><svg width="20" height="20"><use href="#i-right"/></svg></div></div><div class="grid">';
+    DOW.forEach(function(d){h+='<div class="dow">'+d+'</div>'});
+    for(var i=0;i<first;i++) h+='<div class="cell blank"></div>';
+    for(var d=1;d<=days;d++){
+      var col=(first+d-1)%7, ev=eventsForDate(y,m,d);
+      var types=[]; ev.forEach(function(e){if(types.indexOf(e[0])<0)types.push(e[0])});
+      var cls='cell'+(col>4?' we':'')+(y===TODAY.y&&m===TODAY.m&&d===TODAY.d?' today':'')+(cal.sel===d?' sel':'');
+      h+='<button class="'+cls+'" data-day="'+d+'"><span class="num">'+d+'</span><span class="dots">'+types.slice(0,3).map(function(t){return '<i class="t-'+t+'"></i>'}).join('')+'</span></button>';
+    }
+    h+='</div>';
+    if(cal.sel){
+      var ev2=eventsForDate(y,m,cal.sel);
+      var wd=DOW[(first+cal.sel-1)%7];
+      h+='<div class="dayhead">'+wd+', '+cal.sel+' '+MONTHS[m]+'<span>'+(ev2.length?ev2.length+(ev2.length>1?' events':' event'):'No events')+'</span></div>';
+      h+=ev2.map(function(e,i){return '<div class="ev" style="animation-delay:'+(i*0.04)+'s"><i class="t-'+e[0]+'"></i><div><b>'+e[1]+'</b><small>'+TLABEL[e[0]]+'</small></div></div>'}).join('');
+    }
+    h+='<div class="legend"><span><i class="t-a"></i>Attendance</span><span><i class="t-o"></i>Opens</span><span><i class="t-c"></i>Closes</span><span><i class="t-d"></i>Due</span></div>';
+    return h;
+  }
+
+  /* ---------- элементы ---------- */
+  var phone=document.getElementById('phone'), burger=document.getElementById('burger'),
+      user=document.getElementById('user'), drop=document.getElementById('drop'),
+      overlay=document.getElementById('overlay'), view=document.getElementById('view'),
+      page=document.getElementById('page'), drawer=document.getElementById('drawer');
+
+  function setNav(on){phone.classList.toggle('nav',on);burger.classList.toggle('on',on);if(on)setDrop(false);}
+  function setDrop(on){drop.classList.toggle('show',on);user.classList.toggle('open',on);}
+
+  /* ---------- роутинг ---------- */
+  var current=null;
+  function route(){
+    var r=(location.hash||'#home').slice(1); if(!VIEWS[r]) r='home';
+    if(r===current) return; current=r;
+    view.innerHTML=VIEWS[r](); page.scrollTop=0;
+    drawer.querySelectorAll('a').forEach(function(a){a.classList.toggle('active',a.getAttribute('data-route')===r)});
+    if(r==='courses'){animateBars();var q=document.getElementById('q');
+      q.addEventListener('input',function(){document.getElementById('clist').innerHTML=courseList(q.value);animateBars();});}
+  }
+  function go(r){ if(location.hash==='#'+r){setNav(false);return;} location.hash=r; }
+  window.addEventListener('hashchange',route);
+
+  drawer.addEventListener('click',function(e){
+    var a=e.target.closest('a[data-route]'); if(!a) return;
+    setNav(false); setTimeout(function(){go(a.getAttribute('data-route'));},180);
+  });
+  document.getElementById('logo').addEventListener('click',function(){setNav(false);go('home');});
+
+  /* календарь: клики внутри страницы */
+  view.addEventListener('click',function(e){
+    var box=document.getElementById('calbox'); if(!box||!box.contains(e.target)) return;
+    var nav=e.target.closest('[data-nav]'), day=e.target.closest('[data-day]');
+    if(nav){var d=+nav.getAttribute('data-nav');cal.m+=d;if(cal.m<0){cal.m=11;cal.y--}if(cal.m>11){cal.m=0;cal.y++}
+      cal.sel=(cal.y===TODAY.y&&cal.m===TODAY.m)?TODAY.d:1;box.innerHTML=calHTML();}
+    else if(day){cal.sel=+day.getAttribute('data-day');box.innerHTML=calHTML();}
+  });
+
+  /* ---------- меню и профиль ---------- */
+  burger.addEventListener('click',function(e){e.stopPropagation();setNav(!phone.classList.contains('nav'));});
+  overlay.addEventListener('click',function(){setNav(false);});
+  user.addEventListener('click',function(e){e.stopPropagation();var on=!drop.classList.contains('show');if(on)setNav(false);setDrop(on);});
+  document.addEventListener('click',function(e){if(!drop.contains(e.target))setDrop(false);});
+
+  /* ---------- вход / выход ---------- */
+  var login=document.getElementById('login'), lgform=document.getElementById('lgform'),
+      lgu=document.getElementById('lgu'), lgp=document.getElementById('lgp'),
+      lgbtn=document.getElementById('lgbtn'), lgoidc=document.getElementById('lgoidc'),
+      lgerr=document.getElementById('lgerr'), lgeye=document.getElementById('lgeye'),
+      lglang=document.getElementById('lglang');
+  var I18N={
+    en:{welcome:'Welcome back',sub:'Log in to Site home',user:'Username',pass:'Password',userPh:'Enter your username',passPh:'Enter your password',forgot:'Forgot password?',login:'Log in',or:'OR',oidc:'Log in with OpenID Connect',cookies:'Cookies notice',err:'Invalid login, please try again',label:'English (en)',demoTitle:'Quick demo login',demoPass:'Demo password: Study2026!'},
+    ru:{welcome:'С возвращением',sub:'Войдите на сайт',user:'Имя пользователя',pass:'Пароль',userPh:'Введите имя пользователя',passPh:'Введите пароль',forgot:'Забыли пароль?',login:'Войти',or:'ИЛИ',oidc:'Войти через OpenID Connect',cookies:'Уведомление о cookies',err:'Неверный логин или пароль, попробуйте ещё раз',label:'Русский (ru)',demoTitle:'Быстрый демо-вход',demoPass:'Пароль демо-аккаунтов: Study2026!'}
+  };
+  var lang='en';
+  function applyLang(){
+    var d=I18N[lang];
+    login.querySelectorAll('[data-i18n]').forEach(function(n){n.textContent=d[n.getAttribute('data-i18n')]});
+    login.querySelectorAll('[data-i18n-ph]').forEach(function(n){n.placeholder=d[n.getAttribute('data-i18n-ph')]});
+    document.getElementById('lglabel').textContent=d.label;
+    lgerr.textContent&&(lgerr.textContent=d.err);
+  }
+  lglang.addEventListener('click',function(){lang=lang==='en'?'ru':'en';applyLang();});
+
+  function setFlag(v){try{v?sessionStorage.setItem('lms-in','1'):sessionStorage.removeItem('lms-in')}catch(e){}}
+  function getFlag(){try{return sessionStorage.getItem('lms-in')==='1'}catch(e){return false}}
+  function showApp(){login.classList.add('hide');setFlag(true);lgbtn.classList.remove('load');lgoidc.classList.remove('load');}
+  function showLogin(){
+    setNav(false);setDrop(false);
+    document.body.classList.remove('staff-mode');document.getElementById('staffPanel').classList.remove('show');
+    lgu.value='';lgp.value='';lgerr.classList.remove('show');
+    login.classList.remove('hide');setFlag(false);
+    location.hash='home';
+  }
+  function fail(){
+    lgerr.textContent=I18N[lang].err;lgerr.classList.add('show');
+    lgu.classList.toggle('bad',!lgu.value.trim());lgp.classList.toggle('bad',!lgp.value);
+    lgform.classList.remove('shake');void lgform.offsetWidth;lgform.classList.add('shake');
+  }
+  lgform.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(!lgu.value.trim()||!lgp.value){fail();return;}
+    lgerr.classList.remove('show');lgu.classList.remove('bad');lgp.classList.remove('bad');
+    lgbtn.classList.add('load');
+    fetch(API_BASE+'/api/auth/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:lgu.value.trim(),password:lgp.value})})
+      .then(function(r){if(!r.ok)throw new Error('login');return r.json()})
+      .then(function(data){sessionStorage.setItem('lms-token',data.access_token);if(data.role==='teacher'||data.role==='admin'){openStaffWorkspace(data);return null;}return api('/api/me')})
+      .then(function(me){if(!me)return;STUDENT=me;return Promise.all([api('/api/me/courses'),api('/api/me/schedule'),api('/api/me/preferences')])})
+      .then(function(data){if(data)setStudentData(data);})
+      .catch(function(){sessionStorage.removeItem('lms-token');lgerr.textContent=I18N[lang].err+' · Проверьте, запущен ли сервер';lgerr.classList.add('show');lgbtn.classList.remove('load');});
+  });
+  login.querySelectorAll('[data-demo-user]').forEach(function(button){button.addEventListener('click',function(){lgu.value=button.getAttribute('data-demo-user');lgp.value='Study2026!';lgu.classList.remove('bad');lgp.classList.remove('bad');lgerr.classList.remove('show');lgform.requestSubmit();});});
+  [lgu,lgp].forEach(function(i){i.addEventListener('input',function(){i.classList.remove('bad')})});
+  lgoidc.addEventListener('click',function(){lgerr.textContent='Вход через OpenID Connect пока недоступен в демо';lgerr.classList.add('show');});
+  lgeye.addEventListener('click',function(){
+    var show=lgp.type==='password';lgp.type=show?'text':'password';
+    lgeye.querySelector('use').setAttribute('href',show?'#i-eyeoff':'#i-eye');
+  });
+  document.getElementById('logout').addEventListener('click',function(){setDrop(false);sessionStorage.removeItem('lms-token');setTimeout(showLogin,180);});
+  login.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault()})});
+
+  function api(path){return fetch(API_BASE+path,{headers:{'Authorization':'Bearer '+sessionStorage.getItem('lms-token')}}).then(function(r){if(!r.ok)throw new Error('api');return r.json()});}
+  function apiRequest(path,method,body){return fetch(API_BASE+path,{method:method,headers:{'Authorization':'Bearer '+sessionStorage.getItem('lms-token'),'Content-Type':'application/json'},body:body?JSON.stringify(body):undefined}).then(function(r){return r.json().then(function(data){if(!r.ok)throw new Error(data.detail||'Request failed');return data;})});}
+  var staffContent=document.getElementById('staffContent'),staffStatus=document.getElementById('staffStatus'),teacherCourseRows=[];
+  function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+  function setStaffStatus(msg,bad){staffStatus.textContent=msg||'';staffStatus.style.color=bad?'#b42318':'#245b38';}
+  function openStaffWorkspace(data){document.body.classList.add('staff-mode');document.getElementById('staffPanel').classList.add('show');document.getElementById('staffTitle').textContent=data.role==='admin'?'Administration':'Teacher workspace';document.getElementById('staffIdentity').textContent=(data.display_name||data.role)+' · '+data.role;login.classList.add('hide');setFlag(true);if(data.role==='teacher')loadTeacherWorkspace();else loadAdminWorkspace();}
+  function loadTeacherWorkspace(){
+    Promise.all([api('/api/teacher/me'),api('/api/teacher/courses')]).then(function(x){teacherCourseRows=x[1];document.getElementById('staffIdentity').textContent=x[0].name+' · teacher';
+      staffContent.innerHTML='<div class="staff-card"><h2>My courses</h2><select id="teacherCourseSelect" class="staff-select"><option value="">Select a course</option>'+teacherCourseRows.map(function(c){return '<option value="'+c.id+'">'+esc(c.code+' · '+c.title)+'</option>'}).join('')+'</select><p class="staff-muted">Only courses assigned to your instructor account appear here.</p></div><div id="teacherRoster"></div>';
+      document.getElementById('teacherCourseSelect').addEventListener('change',function(){if(this.value)loadTeacherRoster(+this.value);else document.getElementById('teacherRoster').innerHTML='';});
+      if(teacherCourseRows.length){document.getElementById('teacherCourseSelect').value=teacherCourseRows[0].id;loadTeacherRoster(teacherCourseRows[0].id);}else setStaffStatus('No courses are assigned to this teacher account.',false);
+    }).catch(function(e){setStaffStatus(e.message,true);});
+  }
+  function loadTeacherRoster(courseId){api('/api/teacher/courses/'+courseId+'/roster').then(function(rows){
+    document.getElementById('teacherRoster').innerHTML='<div class="staff-card"><h2>Students · '+rows.length+'</h2><div class="staff-scroll"><table class="staff-table"><thead><tr><th>Student</th><th>Group</th><th>Progress</th><th>Grade (0–100)</th><th>Attendance</th><th>Save</th></tr></thead><tbody>'+rows.map(function(r){return '<tr><td>'+esc(r.name)+'</td><td>'+esc(r.group)+'</td><td>'+r.progress+'%</td><td><input class="staff-grade" type="number" min="0" max="100" value="'+(r.grade==null?'':r.grade)+'" data-grade="'+r.enrollment_id+'"></td><td><select class="staff-select" data-attendance="'+r.student_id+'" data-schedule="'+(r.schedule_id||'')+'"><option value="">—</option>'+[['present','Present'],['absent','Absent'],['late','Late'],['excused','Excused']].map(function(x){return '<option value="'+x[0]+'" '+(r.attendance===x[0]?'selected':'')+'>'+x[1]+'</option>'}).join('')+'</select></td><td><button class="staff-action" data-save-row="'+r.student_id+'" data-enrollment="'+r.enrollment_id+'">Save</button></td></tr>'}).join('')+'</tbody></table></div></div>';
+    document.querySelectorAll('[data-save-row]').forEach(function(btn){btn.addEventListener('click',function(){var eid=btn.getAttribute('data-enrollment'),sid=btn.getAttribute('data-save-row'),grade=document.querySelector('[data-grade="'+eid+'"]').value,att=document.querySelector('[data-attendance="'+sid+'"]');var tasks=[];if(grade!=='')tasks.push(apiRequest('/api/teacher/enrollments/'+eid+'/grade','PUT',{grade:+grade}));if(att&&att.value&&att.getAttribute('data-schedule'))tasks.push(apiRequest('/api/teacher/attendance','PUT',{schedule_id:+att.getAttribute('data-schedule'),student_id:+sid,status:att.value}));Promise.all(tasks).then(function(){setStaffStatus('Grade/attendance saved.',false)}).catch(function(e){setStaffStatus(e.message,true)});});});
+  }).catch(function(e){setStaffStatus(e.message,true);});}
+  function loadAdminWorkspace(){Promise.all([api('/api/admin/overview'),api('/api/admin/staff'),api('/api/admin/instructors'),api('/api/admin/courses')]).then(function(x){
+    var stats=x[0],staff=x[1],instructors=x[2],courses=x[3];
+    staffContent.innerHTML='<div class="staff-stats">'+[['students',stats.students],['teachers',stats.teachers],['admins',stats.admins],['courses',stats.courses],['groups',stats.groups]].map(function(a){return '<div class="staff-stat"><b>'+a[1]+'</b>'+a[0]+'</div>'}).join('')+'</div><div class="staff-card"><h2>Create staff account</h2><form id="staffCreateForm" class="staff-form"><input name="username" placeholder="Username" required minlength="4"><input name="password" type="password" placeholder="Temporary password (10+ chars)" required minlength="10"><select name="role"><option value="teacher">Teacher</option><option value="admin">Administrator</option></select><select name="instructor_id" id="staffInstructor"><option value="">Choose instructor for teacher</option>'+instructors.map(function(i){return '<option value="'+i.id+'">'+esc(i.name)+'</option>'}).join('')+'</select><button class="staff-action">Create account</button></form></div><div class="staff-card"><h2>Staff accounts</h2><div class="staff-scroll"><table class="staff-table"><thead><tr><th>Username</th><th>Role</th><th>Instructor</th><th>Status</th><th>Action</th></tr></thead><tbody>'+staff.map(function(s){return '<tr><td>'+esc(s.username)+'</td><td>'+esc(s.role)+'</td><td>'+esc(s.instructor||'—')+'</td><td>'+(s.active?'Active':'Disabled')+'</td><td><button class="staff-action" data-toggle-staff="'+s.id+'" data-active="'+s.active+'">'+(s.active?'Disable':'Enable')+'</button></td></tr>'}).join('')+'</tbody></table></div></div><div class="staff-card"><h2>Assign course to teacher</h2><div class="staff-scroll"><table class="staff-table"><tbody>'+courses.map(function(c){return '<tr><td>'+esc(c.code+' · '+c.title)+'</td><td><select class="staff-select" data-course-instructor="'+c.id+'">'+instructors.map(function(i){return '<option value="'+i.id+'" '+(i.id===c.instructor_id?'selected':'')+'>'+esc(i.name)+'</option>'}).join('')+'</select></td><td><button class="staff-action" data-assign-course="'+c.id+'">Assign</button></td></tr>'}).join('')+'</tbody></table></div></div>';
+    document.getElementById('staffCreateForm').addEventListener('submit',function(e){e.preventDefault();var f=new FormData(e.target),role=f.get('role'),iid=f.get('instructor_id');apiRequest('/api/admin/staff','POST',{username:f.get('username'),password:f.get('password'),role:role,instructor_id:role==='teacher'&&iid?+iid:null}).then(function(){setStaffStatus('Account created.',false);loadAdminWorkspace();}).catch(function(err){setStaffStatus(err.message,true)});});
+    document.querySelectorAll('[data-toggle-staff]').forEach(function(b){b.addEventListener('click',function(){apiRequest('/api/admin/staff/'+b.getAttribute('data-toggle-staff')+'/active?active='+(b.getAttribute('data-active')!=='true'),'PUT').then(loadAdminWorkspace).catch(function(e){setStaffStatus(e.message,true)});});});
+    document.querySelectorAll('[data-assign-course]').forEach(function(b){b.addEventListener('click',function(){var id=b.getAttribute('data-assign-course'),iid=document.querySelector('[data-course-instructor="'+id+'"]').value;apiRequest('/api/admin/courses/'+id+'/instructor','PUT',{instructor_id:+iid}).then(function(){setStaffStatus('Course instructor updated.',false);}).catch(function(e){setStaffStatus(e.message,true)});});});
+  }).catch(function(e){setStaffStatus(e.message,true);});}
+  document.getElementById('staffLogout').addEventListener('click',function(){sessionStorage.removeItem('lms-token');showLogin();});
+  function setStudentData(data){COURSES=data[0].map(function(c){return {id:c.id,name:c.title,teacher:c.instructor,p:c.progress,grade:c.grade,code:c.code}});GRADES=COURSES.map(function(c){return c.id});SCHEDULE=data[1];STUDENT_PREFS=data[2];if(STUDENT_PREFS.language==='ru'&&lang!=='ru'){lang='ru';applyLang();}current=null;route();showApp();}
+  if(sessionStorage.getItem('lms-token')){
+    api('/api/auth/me').then(function(who){if(who.role==='teacher'||who.role==='admin'){openStaffWorkspace({role:who.role,display_name:who.display_name});return null;}return api('/api/me').then(function(me){STUDENT=me;return Promise.all([api('/api/me/courses'),api('/api/me/schedule'),api('/api/me/preferences')]);})}).then(function(data){if(data)setStudentData(data);}).catch(function(){sessionStorage.removeItem('lms-token');});
+  }
+
+  route();
+})();
+</script>
+</body>
+</html>
