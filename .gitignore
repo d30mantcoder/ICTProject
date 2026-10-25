@@ -1,8 +1,17 @@
-evidence/
-ICT_Assignment_3_Report.docx
-SE-2623_Team_ICT_Assignment3.pdf
-AITU_Study_LMS_bundle.zip
-'mid-term project.pdf'
-КАК_ПОСМОТРЕТЬ_БД.md
-Справка_для_подготовки_отчета_ICT.docx
-README.md
+# Local environments and generated Python files
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+node_modules/
+
+# Credentials, saved browser sessions and private data
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.sqlite*
+*.db
+bridge-test/data/
+backups/

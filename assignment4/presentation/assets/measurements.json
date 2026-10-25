@@ -1,0 +1,34 @@
+[
+  {
+    "label": "PNG",
+    "file": "attendance.png",
+    "bytes": 59787,
+    "kib": 58.39,
+    "width": 390,
+    "height": 844
+  },
+  {
+    "label": "JPEG Q80",
+    "file": "attendance-q80.jpg",
+    "bytes": 29411,
+    "kib": 28.72,
+    "width": 390,
+    "height": 844
+  },
+  {
+    "label": "JPEG Q40",
+    "file": "attendance-q40.jpg",
+    "bytes": 16882,
+    "kib": 16.49,
+    "width": 390,
+    "height": 844
+  },
+  {
+    "label": "WebP Q80",
+    "file": "attendance.webp",
+    "bytes": 16126,
+    "kib": 15.75,
+    "width": 390,
+    "height": 844
+  }
+]

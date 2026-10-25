@@ -1,0 +1,746 @@
+[
+  [
+    2,
+    "Part A",
+    1,
+    1.8,
+    5,
+    0.8799999999999999
+  ],
+  [
+    2,
+    "Multimedia\nformats",
+    1,
+    2.65,
+    5.3,
+    2.08
+  ],
+  [
+    2,
+    "In our prototype",
+    1.35,
+    5.35,
+    4.6499999999999995,
+    1.03
+  ],
+  [
+    2,
+    "WebP for the attendance preview; inline SVG for interface icons.",
+    1.35,
+    6.15,
+    4.6499999999999995,
+    1.5799999999999998
+  ],
+  [
+    2,
+    "FORMAT",
+    7.0600000000000005,
+    1.94,
+    1.28,
+    0.5900000000000001
+  ],
+  [
+    2,
+    "KEY TRAIT",
+    8.84,
+    1.94,
+    3.68,
+    0.5900000000000001
+  ],
+  [
+    2,
+    "BEST FIT",
+    13.02,
+    1.94,
+    5.029999999999999,
+    0.5900000000000001
+  ],
+  [
+    2,
+    "PNG",
+    7.0600000000000005,
+    2.7900000000000005,
+    1.28,
+    1.64
+  ],
+  [
+    2,
+    "Lossless; supports transparency",
+    8.84,
+    2.7900000000000005,
+    3.68,
+    1.64
+  ],
+  [
+    2,
+    "Screenshots and graphics where crisp text or edges matter",
+    13.02,
+    2.7900000000000005,
+    5.029999999999999,
+    1.64
+  ],
+  [
+    2,
+    "JPEG",
+    7.0600000000000005,
+    4.69,
+    1.28,
+    1.64
+  ],
+  [
+    2,
+    "Lossy; compact for photographs",
+    8.84,
+    4.69,
+    3.68,
+    1.64
+  ],
+  [
+    2,
+    "Photos and images where a smaller file is more important than perfect detail",
+    13.02,
+    4.69,
+    5.029999999999999,
+    1.64
+  ],
+  [
+    2,
+    "WebP",
+    7.0600000000000005,
+    6.590000000000001,
+    1.28,
+    1.64
+  ],
+  [
+    2,
+    "Lossy or lossless; compact",
+    8.84,
+    6.590000000000001,
+    3.68,
+    1.64
+  ],
+  [
+    2,
+    "Web images and the attendance preview used in our prototype",
+    13.02,
+    6.590000000000001,
+    5.029999999999999,
+    1.64
+  ],
+  [
+    4,
+    "A2. Measured experiment",
+    0.95,
+    0.5,
+    18.1,
+    0.9299999999999999
+  ],
+  [
+    4,
+    "PNG · original",
+    1.35,
+    2.08,
+    7.9,
+    0.63
+  ],
+  [
+    4,
+    "58.39 KiB",
+    1.35,
+    2.65,
+    7.9,
+    1.13
+  ],
+  [
+    4,
+    "attendance-preview.png · 390 × 844 px",
+    1.35,
+    3.65,
+    7.9,
+    0.5800000000000001
+  ],
+  [
+    4,
+    "WebP Q80 · in app",
+    10.7,
+    2.68,
+    7.9,
+    0.63
+  ],
+  [
+    4,
+    "15.75 KiB",
+    10.7,
+    3.25,
+    7.9,
+    1.13
+  ],
+  [
+    4,
+    "attendance-preview.webp · 390 × 844 px",
+    10.7,
+    4.25,
+    7.9,
+    0.5800000000000001
+  ],
+  [
+    4,
+    "42.64 KiB saved · 73.0% smaller",
+    1.3,
+    4.72,
+    8,
+    0.6799999999999999
+  ],
+  [
+    4,
+    "JPEG exports · pending",
+    1.35,
+    6.1,
+    7.8999999999999995,
+    1.03
+  ],
+  [
+    4,
+    "attendance-preview.jpg — JPEG Q80\nattendance-preview-low.jpg — JPEG Q40\nBoth: 390 × 844 px. Files not supplied; export and inspect.",
+    1.35,
+    6.9,
+    7.8999999999999995,
+    1.4800000000000002
+  ],
+  [
+    4,
+    "10-second clip · pending",
+    10.7,
+    5.55,
+    7.8999999999999995,
+    1.03
+  ],
+  [
+    4,
+    "Version 1: proposed MP4 H.264, 720p.\nVersion 2: same clip, lower video bitrate.\nFiles not supplied; compare text and motion.",
+    10.7,
+    6.35,
+    7.8999999999999995,
+    2.0300000000000002
+  ],
+  [
+    4,
+    "Visual quality checks are still pending. JPEG and clip entries are a test plan, not completed measurements.\nSource: supplied project inventory, 23 Oct 2026. 1 KiB = 1024 bytes.",
+    1.25,
+    8.899999999999999,
+    17.45,
+    0.77
+  ],
+  [
+    5,
+    "A2. Visual quality check",
+    0.95,
+    0.5,
+    18.1,
+    0.9299999999999999
+  ],
+  [
+    5,
+    "Compare like for like",
+    1.35,
+    2.3,
+    9.700000000000001,
+    1.03
+  ],
+  [
+    5,
+    "Use the same attendance screen in all four exports. Compare an identical crop at 100% zoom so text edges and calendar lines remain comparable.",
+    1.35,
+    3.1,
+    9.700000000000001,
+    3.08
+  ],
+  [
+    5,
+    "Four exports",
+    12.35,
+    3.0999999999999996,
+    6.25,
+    1.03
+  ],
+  [
+    5,
+    "PNG\nJPEG Q80\nJPEG Q40\nWebP Q80",
+    12.35,
+    3.9,
+    6.25,
+    3.0300000000000002
+  ],
+  [
+    5,
+    "Evidence still needed",
+    1.35,
+    6.95,
+    9.700000000000001,
+    1.03
+  ],
+  [
+    5,
+    "One side-by-side screenshot, JPEG file sizes, and two exports of the same 10-second clip. Rate each result as sharp, acceptable or poor after inspection.",
+    1.35,
+    7.75,
+    9.700000000000001,
+    1.3299999999999998
+  ],
+  [
+    5,
+    "Comparison images and recording are not included in this deck. Quality ratings remain pending.",
+    12.25,
+    7.6000000000000005,
+    6.45,
+    1.5799999999999998
+  ],
+  [
+    6,
+    "A2. Our format choices",
+    0.95,
+    0.5,
+    18.1,
+    0.9299999999999999
+  ],
+  [
+    6,
+    "For the My AITU / LMS bridge",
+    1.35,
+    2.1,
+    9.4,
+    1.03
+  ],
+  [
+    6,
+    "WebP Q80 supplies the attendance preview at 390 × 844 px. PNG remains the original evidence image because it preserves text and edges without lossy compression.\nInline SVG keeps icons sharp at different sizes and shares the HTML response. CSS provides the login pulse without a separate video download.",
+    1.35,
+    2.9000000000000004,
+    9.4,
+    3.4300000000000006
+  ],
+  [
+    6,
+    "Planned demonstration",
+    1.35,
+    7.1,
+    9.4,
+    1.03
+  ],
+  [
+    6,
+    "MP4 with H.264 video and AAC audio for broad playback support. JPEG settings and the ten-second clip still need measured comparison before we can report their quality or size.",
+    1.35,
+    7.9,
+    9.4,
+    1.3800000000000001
+  ],
+  [
+    6,
+    "73%",
+    12,
+    2.15,
+    6.9,
+    1.78
+  ],
+  [
+    6,
+    "smaller preview file",
+    12.05,
+    3.95,
+    6.8,
+    0.8799999999999999
+  ],
+  [
+    6,
+    "Same pixels. Less data.",
+    12.1,
+    5.3999999999999995,
+    6.5,
+    1.03
+  ],
+  [
+    6,
+    "PNG 58.39 KiB → WebP 15.75 KiB\n42.64 KiB saved at the same resolution.",
+    12.1,
+    6.199999999999999,
+    6.5,
+    1.43
+  ],
+  [
+    6,
+    "Measured file sizes only.\nNetwork speed needs its own test.",
+    12.0,
+    8.299999999999999,
+    6.7,
+    1.1300000000000001
+  ],
+  [
+    9,
+    "B2. Integration and optimisation",
+    0.95,
+    0.5,
+    18.1,
+    0.9299999999999999
+  ],
+  [
+    9,
+    "What is integrated",
+    1.35,
+    2.15,
+    7.6000000000000005,
+    1.03
+  ],
+  [
+    9,
+    "WebP preview: 390 × 844 px, displayed at 250 px wide.\n18 inline SVG icons and a CSS login pulse.\nReduced-motion preference disables animation.\nThe full page still needs a 360 px browser check.",
+    1.35,
+    2.95,
+    7.6000000000000005,
+    3.6800000000000006
+  ],
+  [
+    9,
+    "−73.0%",
+    10.3,
+    2.7,
+    3.3,
+    1.03
+  ],
+  [
+    9,
+    "Preview image",
+    14,
+    2.65,
+    4.5,
+    0.6799999999999999
+  ],
+  [
+    9,
+    "59,787 B → 16,126 B",
+    14,
+    3.35,
+    4.5,
+    0.8799999999999999
+  ],
+  [
+    9,
+    "−30.8%",
+    11.05,
+    5.2,
+    3.3,
+    1.03
+  ],
+  [
+    9,
+    "4 front-end files + preview",
+    14.6,
+    5.1,
+    3.9,
+    0.98
+  ],
+  [
+    9,
+    "141,601 B → 97,941 B",
+    14.6,
+    6.03,
+    3.9,
+    0.8300000000000001
+  ],
+  [
+    9,
+    "DevTools measurements: still required",
+    1.35,
+    7.45,
+    11.0,
+    1.03
+  ],
+  [
+    9,
+    "Disable cache, select Fast 4G and reload the same screen before and after. Capture transferred bytes, request count and Finish/Load time. Image-request delta should be 0; verify the total.",
+    1.35,
+    8.25,
+    11.0,
+    1.18
+  ],
+  [
+    9,
+    "Controlled local payload excludes headers, compression, API, fonts and map traffic. Stage 1: <3 s per request at 1,000 users remains unverified.",
+    13.3,
+    7.6000000000000005,
+    5.4,
+    1.9799999999999998
+  ],
+  [
+    10,
+    "B3. Accessibility of media",
+    0.95,
+    0.5,
+    18.1,
+    0.9299999999999999
+  ],
+  [
+    10,
+    "Meaningful images have alt text",
+    1.35,
+    2.1,
+    8.3,
+    1.03
+  ],
+  [
+    10,
+    "The test attendance preview describes the month and status counts. Decorative SVGs use aria-hidden=\"true\"; controls retain text or accessible labels.",
+    1.35,
+    2.9000000000000004,
+    8.3,
+    1.78
+  ],
+  [
+    10,
+    "<img src=\"/attendance-preview.webp\"\nwidth=\"390\" height=\"844\"\nalt=\"Тестовый экран посещаемости: календарь за октябрь 2026 года и счётчики — 0 присутствий, 1 пропуск, 0 опозданий, 1 запись без отметки.\">",
+    1.3,
+    5.4,
+    8.4,
+    2.33
+  ],
+  [
+    10,
+    "Motion follows user preference",
+    10.95,
+    2.9499999999999997,
+    7.6499999999999995,
+    1.03
+  ],
+  [
+    10,
+    "Progress is visible as text and a pulse. Animation and transitions are disabled when reduced motion is requested.",
+    10.95,
+    3.75,
+    7.6499999999999995,
+    1.4800000000000002
+  ],
+  [
+    10,
+    "@media (prefers-reduced-motion: reduce) {\n  *, *::before, *::after { animation: none !important;\n  transition: none !important;\n  scroll-behavior: auto !important; } }",
+    10.9,
+    5.95,
+    7.75,
+    1.78
+  ],
+  [
+    10,
+    "No speech media or sound playback: captions and sound equivalents are currently N/A. No live text sits over raster images, so the 4.5:1 text-over-image test is N/A. Source: supplied part_b.md, B3.",
+    1.25,
+    8.5,
+    17.45,
+    0.98
+  ],
+  [
+    12,
+    "C1. Storyboard",
+    0.95,
+    0.5,
+    18.1,
+    0.9299999999999999
+  ],
+  [
+    12,
+    "01  ·  0:00–0:30",
+    1.3,
+    2.02,
+    7.4,
+    0.6799999999999999
+  ],
+  [
+    12,
+    "Login screen",
+    1.3,
+    2.68,
+    7.4,
+    0.98
+  ],
+  [
+    12,
+    "Nurassyl: how the login process looks",
+    1.3,
+    3.6500000000000004,
+    7.4,
+    0.6599999999999999
+  ],
+  [
+    12,
+    "02  ·  0:30–1:10",
+    9.65,
+    3.27,
+    7.4,
+    0.6799999999999999
+  ],
+  [
+    12,
+    "Main pages, burger menu and references from Stage 1",
+    9.65,
+    3.9299999999999997,
+    7.4,
+    0.98
+  ],
+  [
+    12,
+    "Salima: website content and design decisions",
+    9.65,
+    4.9,
+    7.4,
+    0.6599999999999999
+  ],
+  [
+    12,
+    "03  ·  1:10–1:40",
+    1.3,
+    5.72,
+    7.4,
+    0.6799999999999999
+  ],
+  [
+    12,
+    "Statistics and survey from Stage 1",
+    1.3,
+    6.38,
+    7.4,
+    0.98
+  ],
+  [
+    12,
+    "Azhar: the purpose of the project",
+    1.3,
+    7.35,
+    7.4,
+    0.6599999999999999
+  ],
+  [
+    12,
+    "04  ·  1:40–2:10",
+    9.65,
+    6.97,
+    7.4,
+    0.6799999999999999
+  ],
+  [
+    12,
+    "Demo sketches",
+    9.65,
+    7.63,
+    7.4,
+    0.98
+  ],
+  [
+    12,
+    "Azhar: the future of the project",
+    9.65,
+    8.6,
+    7.4,
+    0.6599999999999999
+  ],
+  [
+    16,
+    "D1. Updated prototype",
+    0.95,
+    0.5,
+    18.1,
+    0.9299999999999999
+  ],
+  [
+    16,
+    "Run the prototype",
+    3.9,
+    1.9,
+    11.8,
+    0.73
+  ],
+  [
+    16,
+    "github.com/d30mantcoder/ICTProject",
+    4,
+    2.7,
+    11.6,
+    0.6599999999999999
+  ],
+  [
+    16,
+    "01  Clone the repository\n02  Create a virtual environment",
+    3.9,
+    3.45,
+    5.7,
+    1.5799999999999998
+  ],
+  [
+    16,
+    "03  Install requirements.txt\n04  Run bridge-test/app.py with Python",
+    10,
+    3.45,
+    5.9,
+    1.5799999999999998
+  ],
+  [
+    17,
+    "D2. Change log",
+    0.95,
+    0.5,
+    18.1,
+    0.9299999999999999
+  ],
+  [
+    17,
+    "01  Real LMS data",
+    1.35,
+    2.3,
+    7.8,
+    1.03
+  ],
+  [
+    17,
+    "Added fetching from LMS to make the website usable.\nStatus: using real LMS data.",
+    1.35,
+    3.1,
+    7.8,
+    3.38
+  ],
+  [
+    17,
+    "02  A more usable interface",
+    10.549999999999999,
+    3.05,
+    8.05,
+    1.03
+  ],
+  [
+    17,
+    "The original LMS UX was uncomfortable. The redesigned interface places the most useful buttons on the main page.",
+    10.549999999999999,
+    3.85,
+    8.05,
+    1.53
+  ],
+  [
+    17,
+    "03  Multi-user sessions",
+    10.549999999999999,
+    6.1499999999999995,
+    8.05,
+    1.03
+  ],
+  [
+    17,
+    "Previously, more than one person could not work at the same time. Asynchronous sessions now let the server handle multiple users.",
+    10.549999999999999,
+    6.949999999999999,
+    8.05,
+    1.8299999999999998
+  ],
+  [
+    17,
+    "Data → interface → concurrent use",
+    1.1,
+    7.1,
+    8.3,
+    1.38
+  ]
+]

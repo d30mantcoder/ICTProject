@@ -1,0 +1,148 @@
+
+Running test_student_cache.py
+test_catalog_reloads_after_midnight_preserves_source_checked_date (__main__.CacheTests.test_catalog_reloads_after_midnight_preserves_source_checked_date) ... ok
+test_documents_store_academic_fields_exclude_credentials_and_cap_size (__main__.CacheTests.test_documents_store_academic_fields_exclude_credentials_and_cap_size) ... Executing <Task pending name='Task-7' coro=<CacheTests.test_documents_store_academic_fields_exclude_credentials_and_cap_size() running at /home/nuras/Documents/AITU/endterm/bridge-test/test_student_cache.py:71> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/lib64/python3.14/asyncio/futures.py:393, Task.task_wakeup()] created at /usr/lib64/python3.14/asyncio/base_events.py:460> cb=[_run_until_complete_cb() at /usr/lib64/python3.14/asyncio/base_events.py:181] created at /usr/lib64/python3.14/asyncio/runners.py:110> took 0.129 seconds
+ok
+test_empty_courses_replace_old_enrollments_without_losing_clubs (__main__.CacheTests.test_empty_courses_replace_old_enrollments_without_losing_clubs) ... ok
+test_expired_saved_login_cannot_be_restored (__main__.CacheTests.test_expired_saved_login_cannot_be_restored) ... ok
+test_full_email_key_and_moodle_identity_prevent_collisions (__main__.CacheTests.test_full_email_key_and_moodle_identity_prevent_collisions) ... ok
+test_midnight_is_astana_midnight_not_24_hours_after_write (__main__.CacheTests.test_midnight_is_astana_midnight_not_24_hours_after_write) ... ok
+test_missing_key_preserves_only_cached_identity (__main__.CacheTests.test_missing_key_preserves_only_cached_identity) ... ok
+test_remembered_login_is_encrypted_and_bound_to_token (__main__.CacheTests.test_remembered_login_is_encrypted_and_bound_to_token) ... ok
+test_selected_clubs_survive_refresh_and_reopening_database (__main__.CacheTests.test_selected_clubs_survive_refresh_and_reopening_database) ... ok
+test_swapped_encrypted_state_never_restores_another_users_cookies (__main__.CacheTests.test_swapped_encrypted_state_never_restores_another_users_cookies) ... ok
+test_three_concurrent_users_write_isolated_snapshots (__main__.CacheTests.test_three_concurrent_users_write_isolated_snapshots) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.240s
+
+OK
+
+Running test_startup.py
+test_missing_browser_and_retry (__main__.StartupTests.test_missing_browser_and_retry) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.529s
+
+OK
+
+Running test_login_flow.py
+test_authenticator_choice_is_not_clicked_again_while_waiting (__main__.LoginTests.test_authenticator_choice_is_not_clicked_again_while_waiting) ... ok
+test_backend_login_content_and_close_use_same_session (__main__.LoginTests.test_backend_login_content_and_close_use_same_session) ... ok
+test_cancel_while_waiting_for_mfa (__main__.LoginTests.test_cancel_while_waiting_for_mfa) ... ok
+test_declined_passkey_back_button_returns_to_password (__main__.LoginTests.test_declined_passkey_back_button_returns_to_password) ... ok
+test_delayed_submit_does_not_lose_password (__main__.LoginTests.test_delayed_submit_does_not_lose_password) ... ok
+test_does_not_fill_credentials_on_untrusted_host (__main__.LoginTests.test_does_not_fill_credentials_on_untrusted_host) ... ok
+test_email_password_mfa_and_authenticated_data (__main__.LoginTests.test_email_password_mfa_and_authenticated_data) ... ok
+test_generic_mfa_does_not_switch_back_to_password (__main__.LoginTests.test_generic_mfa_does_not_switch_back_to_password) ... ok
+test_keep_account_secure_not_now_completes_login (__main__.LoginTests.test_keep_account_secure_not_now_completes_login) ... ok
+test_mfa_completion_while_reading_number_does_not_stall (__main__.LoginTests.test_mfa_completion_while_reading_number_does_not_stall) ... ok
+test_microsoft_com_passkey_picker_switches_to_password_and_mfa (__main__.LoginTests.test_microsoft_com_passkey_picker_switches_to_password_and_mfa) ... ok
+test_native_passkey_is_declined_before_os_dialog (__main__.LoginTests.test_native_passkey_is_declined_before_os_dialog) ... ok
+test_optional_passkey_enrollment_is_skipped_after_mfa (__main__.LoginTests.test_optional_passkey_enrollment_is_skipped_after_mfa) ... ok
+test_passkey_creation_is_declined_and_other_credentials_unchanged (__main__.LoginTests.test_passkey_creation_is_declined_and_other_credentials_unchanged) ... ok
+test_passkey_preference_is_scoped_to_exact_microsoft_origins (__main__.LoginTests.test_passkey_preference_is_scoped_to_exact_microsoft_origins) ... ok
+test_passkey_without_password_option_waits_for_user (__main__.LoginTests.test_passkey_without_password_option_waits_for_user) ... ok
+test_popup_selection_blank_loading_and_return_to_opener (__main__.LoginTests.test_popup_selection_blank_loading_and_return_to_opener) ... ok
+test_reader_requires_authenticated_moodle (__main__.LoginTests.test_reader_requires_authenticated_moodle) ... ok
+test_repeated_field_resets_stop_instead_of_looping (__main__.LoginTests.test_repeated_field_resets_stop_instead_of_looping) ... ok
+test_replaced_password_field_is_filled_again (__main__.LoginTests.test_replaced_password_field_is_filled_again) ... ok
+test_russian_authenticator_choice_is_supported (__main__.LoginTests.test_russian_authenticator_choice_is_supported) ... ok
+test_security_prompt_disabled_skip_waits_without_clicking (__main__.LoginTests.test_security_prompt_disabled_skip_waits_without_clicking) ... ok
+test_security_prompt_on_untrusted_origin_is_not_clicked (__main__.LoginTests.test_security_prompt_on_untrusted_origin_is_not_clicked) ... ok
+test_security_prompt_skip_is_not_repeated (__main__.LoginTests.test_security_prompt_skip_is_not_repeated) ... ok
+test_security_prompt_waits_for_delayed_skip (__main__.LoginTests.test_security_prompt_waits_for_delayed_skip) ... ok
+test_security_prompt_without_skip_waits_for_user (__main__.LoginTests.test_security_prompt_without_skip_waits_for_user) ... ok
+test_similarly_named_microsoft_domain_is_not_trusted (__main__.LoginTests.test_similarly_named_microsoft_domain_is_not_trusted) ... ok
+test_stay_signed_in_accepts_yes_once_and_never_no (__main__.LoginTests.test_stay_signed_in_accepts_yes_once_and_never_no) ... ok
+test_verify_identity_selects_authenticator_in_any_position (__main__.LoginTests.test_verify_identity_selects_authenticator_in_any_position) ... ok
+test_verify_identity_without_push_does_not_choose_second_option (__main__.LoginTests.test_verify_identity_without_push_does_not_choose_second_option) ... ok
+test_visible_browser_on_desktop_and_explicit_headless_override (__main__.LoginTests.test_visible_browser_on_desktop_and_explicit_headless_override) ... ok
+test_wrong_password_stops_without_retry (__main__.LoginTests.test_wrong_password_stops_without_retry) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 33.374s
+
+OK
+
+Running test_materials.py
+test_actual_saved_login_page_is_not_authenticated (__main__.MaterialTests.test_actual_saved_login_page_is_not_authenticated) ... skipped 'Original Moodle HTML fixture unavailable: Log in to the site _ frontpage'
+test_actual_saved_moodle_config_completes_login_flow (__main__.MaterialTests.test_actual_saved_moodle_config_completes_login_flow) ... skipped 'Original Moodle HTML fixture unavailable: home'
+test_dashboard_every_saved_event_has_course_and_deadline (__main__.MaterialTests.test_dashboard_every_saved_event_has_course_and_deadline) ... skipped 'Original Moodle HTML fixture unavailable: dashboard'
+test_grade_details_preserve_spanning_headers_and_zero (__main__.MaterialTests.test_grade_details_preserve_spanning_headers_and_zero) ... ok
+test_grades_keep_zero_and_link_to_current_users_report (__main__.MaterialTests.test_grades_keep_zero_and_link_to_current_users_report) ... skipped 'Original Moodle HTML fixture unavailable: grades'
+test_home_seven_current_courses (__main__.MaterialTests.test_home_seven_current_courses) ... skipped 'Original Moodle HTML fixture unavailable: home'
+test_mobile_ui_renders_saved_sections_and_opens_grade_details (__main__.MaterialTests.test_mobile_ui_renders_saved_sections_and_opens_grade_details) ... skipped 'Original Moodle HTML fixture unavailable: home'
+test_timeline_all_filter_and_async_show_more (__main__.MaterialTests.test_timeline_all_filter_and_async_show_more) ... ok
+test_zero_camelcase_user_id_is_not_overridden_by_legacy_value (__main__.MaterialTests.test_zero_camelcase_user_id_is_not_overridden_by_legacy_value) ... skipped 'Original Moodle HTML fixture unavailable: home'
+test_new_session_never_restores_another_users_cookies (__main__.SessionTests.test_new_session_never_restores_another_users_cookies) ... ok
+test_reload_reuses_memory_session_and_logout_clears_it (__main__.SessionTests.test_reload_reuses_memory_session_and_logout_clears_it) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 3.405s
+
+OK (skipped=7)
+
+Running test_ui.py
+PASS: connection, sign-in, password toggle, MFA, courses, search, detail/back, menu/Escape, grades including zero, timeline, attendance course/report and zero/unknown marks; no overflow at 320/390/430/1440 px; no JavaScript errors. API responses are fixtures.
+
+Running test_multiuser.py
+test_assistant_uses_only_own_sanitized_context_and_reports_failure (__main__.MultiUserTests.test_assistant_uses_only_own_sanitized_context_and_reports_failure) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_database_persists_across_relogin_and_isolates_accounts (__main__.MultiUserTests.test_database_persists_across_relogin_and_isolates_accounts) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_expiry_limits_and_validation (__main__.MultiUserTests.test_expiry_limits_and_validation) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_failed_refresh_preserves_old_snapshot_and_marks_it_stale (__main__.MultiUserTests.test_failed_refresh_preserves_old_snapshot_and_marks_it_stale) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_midnight_refresh_and_offline_user_refreshes_next_login (__main__.MultiUserTests.test_midnight_refresh_and_offline_user_refreshes_next_login) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_mobile_calendar_notifications_map_and_directory (__main__.MultiUserTests.test_mobile_calendar_notifications_map_and_directory) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_three_users_login_load_notifications_and_logout_isolation (__main__.MultiUserTests.test_three_users_login_load_notifications_and_logout_isolation) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 26.345s
+
+OK
+{"users": 3, "http_requests": 320, "workload_requests": 300, "errors": 0, "p95_seconds": 0.0553, "max_seconds": 0.1722, "cold_three_seconds": 0.175, "workload_seconds": 5.0489, "scope": "Real HTTP and Chromium; Microsoft/Moodle responses are isolated synthetic fixtures, not university load testing."}
+
+Running test_attendance.py
+test_missing_journal_and_staff_redirect_are_not_report_data (__main__.AttendanceTests.test_missing_journal_and_staff_redirect_are_not_report_data) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_three_users_reports_cache_midnight_and_expired_session (__main__.AttendanceTests.test_three_users_reports_cache_midnight_and_expired_session) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_marking_and_staff_endpoints_are_not_readable_content (__main__.AttendanceURLTests.test_marking_and_staff_endpoints_are_not_readable_content) ... ok
+test_report_is_canonical_and_never_replays_another_student_or_action (__main__.AttendanceURLTests.test_report_is_canonical_and_never_replays_another_student_or_action) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 3.727s
+
+OK
+
+Running test_session_continuity.py
+test_expired_moodle_is_renewed_silently_for_same_account (__main__.ContinuityTests.test_expired_moodle_is_renewed_silently_for_same_account) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_four_users_restore_cookies_storage_and_app_login_after_restart (__main__.ContinuityTests.test_four_users_restore_cookies_storage_and_app_login_after_restart) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_keepalive_preserves_foreground_and_logout_revokes_remembered_cookie (__main__.ContinuityTests.test_keepalive_preserves_foreground_and_logout_revokes_remembered_cookie) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_mfa_required_keeps_cached_cabinet_open_after_page_reload (__main__.ContinuityTests.test_mfa_required_keeps_cached_cabinet_open_after_page_reload) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_silent_login_to_different_account_never_replaces_saved_identity (__main__.ContinuityTests.test_silent_login_to_different_account_never_replaces_saved_identity) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 15.105s
+
+OK
+
+Running smoke_test.py
+PASS: authenticated access, origin checks, credential-safe validation, no data before Moodle login
+PASS: mobile login, MFA number, cleared password, retry and automatic course display (provider fixtures)
+PASS: real browser data rendered as mobile tables, navigation, remote fallback, logout
+SKIP: live university SSO probe; enable BRIDGE_LIVE_SMOKE=1 explicitly
+PASS: local smoke complete; no real credentials used; no JavaScript errors
+
+All available checks passed; inspect explicit SKIP notices.

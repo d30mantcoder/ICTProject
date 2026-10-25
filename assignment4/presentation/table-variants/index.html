@@ -1,0 +1,136 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>18 вариантов таблиц</title><style>
+:root{color-scheme:dark;--bg:#120f20;--panel:#201b31;--line:#3c3255;--ink:#f6f1ff;--muted:#b8adca;--accent:#c3a3ff}*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Arial,sans-serif;color:var(--ink)}a{color:inherit}button,a{touch-action:manipulation}button{font:inherit;cursor:pointer}header,main,footer{max-width:1480px;margin:auto;padding:28px}header{padding-top:44px}.eyebrow{color:var(--accent);font-size:12px;font-weight:bold;letter-spacing:2px}h1{font-size:clamp(32px,5vw,64px);letter-spacing:-1.5px;line-height:1.05;margin:16px 0}header p{max-width:700px;color:var(--muted);line-height:1.55;font-size:17px}.links{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.btn{border:1px solid var(--line);border-radius:10px;padding:12px 17px;text-decoration:none;background:var(--panel);color:var(--ink);font-weight:bold;font-size:14px;display:inline-flex;align-items:center;justify-content:center;gap:8px}.primary{background:var(--accent);color:#211335;border-color:var(--accent)}.toolbar{display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap;margin:0 0 24px}.filters{display:flex;flex-wrap:wrap;gap:8px}.filters button{border:1px solid var(--line);border-radius:40px;background:transparent;color:var(--muted);padding:10px 16px}.filters button[aria-pressed=true]{background:#3e2b60;color:white;border-color:#ae83f3}.count{font-size:14px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.card{border:1px solid var(--line);border-radius:15px;overflow:hidden;background:var(--panel)}.open{display:block;width:100%;padding:0;border:0;background:#322249}.open img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain}.info{padding:18px}.card-head{display:flex;align-items:flex-start;gap:10px;justify-content:space-between}.number{font-size:12px;color:var(--accent);font-weight:bold;margin-bottom:8px}.card h2{font-size:20px;margin:0 0 12px;line-height:1.2}.card p{color:var(--muted);font-size:14px;line-height:1.5;margin:0;min-height:42px}.star{background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:10px;padding:8px;min-width:42px;font-size:20px}.star[aria-pressed=true]{color:#ffdb84;background:#493b22;border-color:#a98744}.zoom{color:var(--accent);font-size:13px;margin-top:16px;display:inline-block;background:none;border:0;padding:0}.selection{position:sticky;bottom:14px;margin:26px auto 0;padding:14px 18px;background:#39274f;border:1px solid #8960b7;border-radius:13px;display:flex;gap:14px;align-items:center;justify-content:space-between;box-shadow:0 6px 40px #0007}.selection[hidden]{display:none}.selection span{font-size:14px;line-height:1.4}.selection .btn{flex-shrink:0}footer{color:var(--muted);font-size:13px;line-height:1.7;padding-bottom:40px}dialog{width:min(97vw,1700px);max-width:none;max-height:97dvh;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--bg);color:var(--ink)}dialog::backdrop{background:#08050dec}.modal-bar{padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}.modal-bar h2{font-size:18px;margin:0}.modal-bar button{background:var(--panel);border:1px solid var(--line);border-radius:8px;color:var(--ink);padding:10px 14px}.large{display:block;width:100%;max-height:73dvh;object-fit:contain;background:#07050e}.modal-bottom{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 18px}.modal-bottom .btn{min-height:44px}.modal-bottom a{font-size:13px;color:var(--accent)}button:focus-visible,a:focus-visible{outline:3px solid #e4ceff;outline-offset:4px}@media(max-width:1050px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){header,main,footer{padding:20px}.grid{grid-template-columns:1fr;gap:18px}header{padding-top:30px}header p{font-size:15px}.toolbar{gap:12px}.filters button{font-size:13px;padding:9px 12px}.selection{bottom:8px;padding:12px;gap:8px}.selection .btn{padding:10px;font-size:12px}.modal-bar{padding:12px}.modal-bar h2{font-size:15px}.modal-bottom{flex-wrap:wrap;padding:12px}.modal-bottom a{order:3;width:100%;text-align:center}h1{letter-spacing:-.7px}.links .btn{flex:1}}
+</style></head><body><header><div class="eyebrow">ICT PRESENTATION / ВЫБОР ОФОРМЛЕНИЯ</div><h1>18 вариантов таблиц</h1><p>Прежние пиксельные фоны, разные способы подать данные. Открой слайды крупно и отметь звёздочкой понравившиеся варианты.</p><div class="links"><a class="btn primary" href="presentation.pptx" download>Скачать PPTX</a><a class="btn" href="presentation.pdf" target="_blank">Открыть PDF</a><a class="btn" href="/" target="_blank">Основная презентация</a></div></header><main><div class="toolbar"><nav class="filters" aria-label="Тип таблицы"><button data-filter="all" aria-pressed="true">Все · 18</button><button data-filter="Слайд 2" aria-pressed="false">Слайд 2 · 12</button><button data-filter="10 форматов" aria-pressed="false">10 форматов · 4</button><button data-filter="Команда" aria-pressed="false">Команда · 2</button><button data-filter="favorites" aria-pressed="false">Избранное</button></nav><span class="count" id="count"></span></div><div class="grid" id="grid"></div><div class="selection" id="selection" hidden><span id="selected"></span><button class="btn primary" id="copy">Скопировать номера</button></div></main><footer>В PPTX — обзор и 18 вариантов. Текст, таблицы и карточки редактируются; фон взят из прежней презентации.<br>Ориентиры: <a href="https://www.canva.com/templates/s/table/" target="_blank" rel="noopener">таблицы Canva</a> и <a href="https://www.canva.com/graphs/tables/" target="_blank" rel="noopener">примеры оформления</a>. Это самостоятельные варианты для твоей презентации.</footer><dialog id="viewer"><div class="modal-bar"><h2 id="modal-title"></h2><button id="close" aria-label="Закрыть">✕</button></div><img class="large" id="large" alt=""><div class="modal-bottom"><button class="btn" id="prev">← Назад</button><a id="original-image" target="_blank">Открыть изображение для увеличения</a><button class="btn" id="next">Дальше →</button></div></dialog><script>
+const designs=[
+  {
+    "id": 1,
+    "name": "Чистая классика",
+    "description": "Контрастная шапка, свободные поля и спокойные строки.",
+    "group": "Слайд 2",
+    "page": 2
+  },
+  {
+    "id": 2,
+    "name": "Строки-карточки",
+    "description": "Каждая строка отделена от соседних; форматы видны сразу.",
+    "group": "Слайд 2",
+    "page": 3
+  },
+  {
+    "id": 3,
+    "name": "Пастельные колонки",
+    "description": "Один формат — одна цветная колонка.",
+    "group": "Слайд 2",
+    "page": 4
+  },
+  {
+    "id": 4,
+    "name": "Три карточки",
+    "description": "Свойства и применение собраны в трёх независимых карточках.",
+    "group": "Слайд 2",
+    "page": 5
+  },
+  {
+    "id": 5,
+    "name": "Акцент на WebP",
+    "description": "Выделена колонка формата, выбранного для проекта.",
+    "group": "Слайд 2",
+    "page": 6
+  },
+  {
+    "id": 6,
+    "name": "Тонкие линии",
+    "description": "Лёгкая таблица без вертикальной сетки.",
+    "group": "Слайд 2",
+    "page": 7
+  },
+  {
+    "id": 7,
+    "name": "Тёмная таблица",
+    "description": "Светлый текст и бирюзовые детали на тёмной поверхности.",
+    "group": "Слайд 2",
+    "page": 8
+  },
+  {
+    "id": 8,
+    "name": "Пиксельное окно",
+    "description": "Таблица внутри окна в стиле исходного пиксельного фона.",
+    "group": "Слайд 2",
+    "page": 9
+  },
+  {
+    "id": 9,
+    "name": "Отдельные ячейки",
+    "description": "Мягкие ячейки с промежутками вместо сплошной сетки.",
+    "group": "Слайд 2",
+    "page": 10
+  },
+  {
+    "id": 10,
+    "name": "Цветные вкладки",
+    "description": "Форматы вынесены в цветные вкладки слева.",
+    "group": "Слайд 2",
+    "page": 11
+  },
+  {
+    "id": 11,
+    "name": "Таблица с пояснением",
+    "description": "Краткий вывод слева, компактное сравнение справа.",
+    "group": "Слайд 2",
+    "page": 12
+  },
+  {
+    "id": 12,
+    "name": "Крупная нумерация",
+    "description": "Крупные номера задают порядок чтения.",
+    "group": "Слайд 2",
+    "page": 13
+  },
+  {
+    "id": 13,
+    "name": "Плотная: светлая",
+    "description": "Все 10 форматов и 7 исходных полей на одном слайде.",
+    "group": "10 форматов",
+    "page": 14
+  },
+  {
+    "id": 14,
+    "name": "Плотная: по группам",
+    "description": "Изображения, аудио и видео разделены внутри одной таблицы.",
+    "group": "10 форматов",
+    "page": 15
+  },
+  {
+    "id": 15,
+    "name": "Плотная: акцент на применении",
+    "description": "Колонка применения выделена; остальные поля сохранены.",
+    "group": "10 форматов",
+    "page": 16
+  },
+  {
+    "id": 16,
+    "name": "Плотная: тёмная",
+    "description": "Полная таблица с тёмным фоном и спокойной сеткой.",
+    "group": "10 форматов",
+    "page": 17
+  },
+  {
+    "id": 17,
+    "name": "Команда: карточки",
+    "description": "Три человека — три самостоятельные карточки.",
+    "group": "Команда",
+    "page": 18
+  },
+  {
+    "id": 18,
+    "name": "Команда: таблица",
+    "description": "Обычная таблица с хорошими отступами и выравниванием.",
+    "group": "Команда",
+    "page": 19
+  }
+];let filter='all',current=1;let selected=[];try{selected=JSON.parse(localStorage.getItem('ict-table-favorites')||'[]').filter(n=>Number.isInteger(n)&&n>=1&&n<=18)}catch{}const grid=document.querySelector('#grid'),dialog=document.querySelector('#viewer');const num=n=>String(n).padStart(2,'0');
+function render(){const shown=designs.filter(d=>filter==='all'||(filter==='favorites'?selected.includes(d.id):d.group===filter));grid.innerHTML=shown.map(d=>`<article class="card"><button class="open" data-open="${d.id}" aria-label="Открыть вариант ${num(d.id)}: ${d.name}"><img loading="lazy" src="previews/thumb-${num(d.id)}.jpg" alt="Вариант ${num(d.id)} — ${d.name}" width="700" height="394"></button><div class="info"><div class="card-head"><div><div class="number">${num(d.id)} / ${d.group}</div><h2>${d.name}</h2></div><button class="star" data-star="${d.id}" aria-pressed="${selected.includes(d.id)}" aria-label="Выбрать вариант ${num(d.id)}">${selected.includes(d.id)?'★':'☆'}</button></div><p>${d.description}</p><button class="zoom" data-open="${d.id}">Посмотреть крупно ↗</button></div></article>`).join('');document.querySelector('#count').textContent=`Показано: ${shown.length}`;document.querySelector('#selection').hidden=!selected.length;document.querySelector('#selected').textContent='Нравятся: '+[...selected].sort((a,b)=>a-b).map(num).join(', ')}
+function show(id){current=id;const d=designs.find(d=>d.id===id);document.querySelector('#modal-title').textContent=`${num(id)} · ${d.name}`;document.querySelector('#large').src=`previews/${num(id)}.jpg`;document.querySelector('#large').alt=d.description;document.querySelector('#original-image').href=`previews/${num(id)}.png`;if(!dialog.open)dialog.showModal()}
+grid.addEventListener('click',e=>{const open=e.target.closest('[data-open]');if(open)return show(Number(open.dataset.open));const star=e.target.closest('[data-star]');if(star){let id=Number(star.dataset.star);selected=selected.includes(id)?selected.filter(n=>n!==id):[...selected,id];try{localStorage.setItem('ict-table-favorites',JSON.stringify(selected))}catch{}render()}});
+document.querySelector('.filters').addEventListener('click',e=>{const b=e.target.closest('[data-filter]');if(!b)return;filter=b.dataset.filter;document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));render()});document.querySelector('#close').onclick=()=>dialog.close();document.querySelector('#prev').onclick=()=>show(current===1?18:current-1);document.querySelector('#next').onclick=()=>show(current===18?1:current+1);document.addEventListener('keydown',e=>{if(!dialog.open)return;if(e.key==='ArrowRight')show(current===18?1:current+1);if(e.key==='ArrowLeft')show(current===1?18:current-1)});dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});document.querySelector('#copy').onclick=async()=>{const value='Мне нравятся варианты '+[...selected].sort((a,b)=>a-b).map(num).join(', ');let ok=false;try{await navigator.clipboard.writeText(value);ok=true}catch{const ta=document.createElement('textarea');ta.value=value;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();ok=document.execCommand('copy');ta.remove()}document.querySelector('#copy').textContent=ok?'Номера скопированы':'Номера показаны слева';setTimeout(()=>document.querySelector('#copy').textContent='Скопировать номера',2200)};render();
+</script></body></html>

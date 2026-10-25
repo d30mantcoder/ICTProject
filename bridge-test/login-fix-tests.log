@@ -1,0 +1,36 @@
+test_authenticator_choice_is_not_clicked_again_while_waiting (__main__.LoginTests.test_authenticator_choice_is_not_clicked_again_while_waiting) ... ok
+test_backend_login_content_and_close_use_same_session (__main__.LoginTests.test_backend_login_content_and_close_use_same_session) ... ok
+test_cancel_while_waiting_for_mfa (__main__.LoginTests.test_cancel_while_waiting_for_mfa) ... ok
+test_declined_passkey_back_button_returns_to_password (__main__.LoginTests.test_declined_passkey_back_button_returns_to_password) ... ok
+test_delayed_submit_does_not_lose_password (__main__.LoginTests.test_delayed_submit_does_not_lose_password) ... ok
+test_does_not_fill_credentials_on_untrusted_host (__main__.LoginTests.test_does_not_fill_credentials_on_untrusted_host) ... ok
+test_email_password_mfa_and_authenticated_data (__main__.LoginTests.test_email_password_mfa_and_authenticated_data) ... ok
+test_generic_mfa_does_not_switch_back_to_password (__main__.LoginTests.test_generic_mfa_does_not_switch_back_to_password) ... ok
+test_keep_account_secure_not_now_completes_login (__main__.LoginTests.test_keep_account_secure_not_now_completes_login) ... ok
+test_mfa_completion_while_reading_number_does_not_stall (__main__.LoginTests.test_mfa_completion_while_reading_number_does_not_stall) ... ok
+test_microsoft_com_passkey_picker_switches_to_password_and_mfa (__main__.LoginTests.test_microsoft_com_passkey_picker_switches_to_password_and_mfa) ... ok
+test_native_passkey_is_declined_before_os_dialog (__main__.LoginTests.test_native_passkey_is_declined_before_os_dialog) ... ok
+test_optional_passkey_enrollment_is_skipped_after_mfa (__main__.LoginTests.test_optional_passkey_enrollment_is_skipped_after_mfa) ... ok
+test_passkey_creation_is_declined_and_other_credentials_unchanged (__main__.LoginTests.test_passkey_creation_is_declined_and_other_credentials_unchanged) ... ok
+test_passkey_preference_is_scoped_to_exact_microsoft_origins (__main__.LoginTests.test_passkey_preference_is_scoped_to_exact_microsoft_origins) ... ok
+test_passkey_without_password_option_waits_for_user (__main__.LoginTests.test_passkey_without_password_option_waits_for_user) ... ok
+test_popup_selection_blank_loading_and_return_to_opener (__main__.LoginTests.test_popup_selection_blank_loading_and_return_to_opener) ... ok
+test_reader_requires_authenticated_moodle (__main__.LoginTests.test_reader_requires_authenticated_moodle) ... ok
+test_repeated_field_resets_stop_instead_of_looping (__main__.LoginTests.test_repeated_field_resets_stop_instead_of_looping) ... ok
+test_replaced_password_field_is_filled_again (__main__.LoginTests.test_replaced_password_field_is_filled_again) ... ok
+test_russian_authenticator_choice_is_supported (__main__.LoginTests.test_russian_authenticator_choice_is_supported) ... ok
+test_security_prompt_disabled_skip_waits_without_clicking (__main__.LoginTests.test_security_prompt_disabled_skip_waits_without_clicking) ... ok
+test_security_prompt_on_untrusted_origin_is_not_clicked (__main__.LoginTests.test_security_prompt_on_untrusted_origin_is_not_clicked) ... ok
+test_security_prompt_skip_is_not_repeated (__main__.LoginTests.test_security_prompt_skip_is_not_repeated) ... ok
+test_security_prompt_waits_for_delayed_skip (__main__.LoginTests.test_security_prompt_waits_for_delayed_skip) ... ok
+test_security_prompt_without_skip_waits_for_user (__main__.LoginTests.test_security_prompt_without_skip_waits_for_user) ... ok
+test_similarly_named_microsoft_domain_is_not_trusted (__main__.LoginTests.test_similarly_named_microsoft_domain_is_not_trusted) ... ok
+test_verify_identity_selects_authenticator_in_any_position (__main__.LoginTests.test_verify_identity_selects_authenticator_in_any_position) ... ok
+test_verify_identity_without_push_does_not_choose_second_option (__main__.LoginTests.test_verify_identity_without_push_does_not_choose_second_option) ... ok
+test_visible_browser_on_desktop_and_explicit_headless_override (__main__.LoginTests.test_visible_browser_on_desktop_and_explicit_headless_override) ... ok
+test_wrong_password_stops_without_retry (__main__.LoginTests.test_wrong_password_stops_without_retry) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 32.057s
+
+OK
