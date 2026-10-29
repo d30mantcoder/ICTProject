@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0f6cbf">
+  <meta name="description" content="Мой AITU — адрес учебного кабинета и подключение через Tailscale.">
+  <meta name="referrer" content="no-referrer">
+  <title>Мой AITU · Куда обращаться</title>
+  <style>
+    :root { font-family: system-ui, sans-serif; color: #1d2125; background: #e9ecef; line-height: 1.6; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 48px 20px; }
+    main { max-width: 680px; margin: auto; }
+    header { margin-bottom: 28px; }
+    .brand { color: #0f6cbf; font-size: 24px; font-weight: 700; text-decoration: none; }
+    .subtitle, .note { color: #52616d; }
+    .subtitle { margin: 4px 0 0; }
+    section { background: white; border: 1px solid #dce2e7; border-radius: 16px; padding: 32px; box-shadow: 0 8px 30px #1d212509; }
+    .label { display: inline-block; background: #e8f1f8; color: #185b91; padding: 4px 12px; border-radius: 20px; font-size: 14px; }
+    h1 { font-size: clamp(26px, 6vw, 36px); line-height: 1.2; margin: 18px 0 12px; }
+    h2 { font-size: 19px; margin: 28px 0 8px; }
+    p { margin: 12px 0; }
+    .address { display: block; padding: 14px 16px; margin: 20px 0; background: #f3f6f8; border: 1px solid #dce2e7; border-radius: 8px; overflow-wrap: anywhere; font-size: 16px; }
+    a { color: #0b60a8; text-underline-offset: 3px; }
+    .button { display: block; background: #0f6cbf; border-radius: 8px; padding: 13px 20px; color: white; text-decoration: none; text-align: center; font-weight: 600; }
+    .button:hover { background: #095896; }
+    a:focus-visible { outline: 3px solid #0f6cbf; outline-offset: 4px; }
+    ol { padding-left: 24px; }
+    li { margin-bottom: 10px; padding-left: 4px; }
+    details { border-top: 1px solid #dce2e7; margin-top: 24px; padding-top: 16px; }
+    summary { cursor: pointer; font-weight: 600; }
+    summary:focus-visible { outline: 3px solid #0f6cbf; outline-offset: 4px; }
+    footer { margin-top: 20px; color: #52616d; font-size: 14px; text-align: center; }
+    @media (max-width: 430px) { body { padding: 24px 12px; } section { padding: 24px 20px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="brand" href="./">Мой AITU</a>
+      <p class="subtitle">Курсы, задания, оценки и посещаемость</p>
+    </header>
+    <section aria-labelledby="title">
+      <span class="label">Доступ через Tailscale</span>
+      <h1 id="title">Куда обращаться</h1>
+      <p>Учебный кабинет работает на сервере проекта. Подключи Tailscale на своём устройстве и открой сайт по этому адресу:</p>
+      <code class="address">http://100.116.195.35:1740/</code>
+      <a class="button" href="http://100.116.195.35:1740/" rel="noreferrer">Открыть Мой AITU →</a>
+      <p class="note">Ссылка доступна устройствам, которым разрешён доступ к серверу в Tailscale.</p>
+      <h2>Как подключиться</h2>
+      <ol>
+        <li><a href="https://tailscale.com/download">Установи Tailscale</a> на телефон или компьютер.</li>
+        <li>Попроси владельца проекта предоставить доступ к серверу и подключись к Tailscale.</li>
+        <li>Нажми «Открыть Мой AITU». Вход в учебный аккаунт выполняется уже в кабинете.</li>
+      </ol>
+      <details>
+        <summary>Сайт не открывается</summary>
+        <p>Проверь, что Tailscale включён и у твоего устройства есть доступ к серверу. Сервер проекта должен быть включён, а приложение — запущено на порту 1740.</p>
+        <p>Если подключение не появилось, обратись к человеку, который выдал тебе ссылку на проект.</p>
+      </details>
+    </section>
+    <footer>Мой AITU · Учебный проект</footer>
+  </main>
+</body>
+</html>
