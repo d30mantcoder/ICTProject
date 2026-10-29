@@ -29,3 +29,8 @@ node_modules/
 .pytest_cache/
 test-results/
 playwright-report/
+
+# Additional exclusions from origin/main.
+*.pem
+*.sqlite*
+bridge-test/data/

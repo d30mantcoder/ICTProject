@@ -1,0 +1,15 @@
+test_expired_moodle_is_renewed_silently_for_same_account (__main__.ContinuityTests.test_expired_moodle_is_renewed_silently_for_same_account) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_four_users_restore_cookies_storage_and_app_login_after_restart (__main__.ContinuityTests.test_four_users_restore_cookies_storage_and_app_login_after_restart) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_keepalive_preserves_foreground_and_logout_revokes_remembered_cookie (__main__.ContinuityTests.test_keepalive_preserves_foreground_and_logout_revokes_remembered_cookie) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_mfa_required_keeps_cached_cabinet_open_after_page_reload (__main__.ContinuityTests.test_mfa_required_keeps_cached_cabinet_open_after_page_reload) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_silent_login_to_different_account_never_replaces_saved_identity (__main__.ContinuityTests.test_silent_login_to_different_account_never_replaces_saved_identity) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 14.971s
+
+OK

@@ -1,0 +1,21 @@
+{
+  "users": 3,
+  "responses": [
+    {
+      "user": 1,
+      "seconds": 6.779,
+      "status": 200
+    },
+    {
+      "user": 2,
+      "seconds": 16.665,
+      "status": 200
+    },
+    {
+      "user": 3,
+      "seconds": 11.714,
+      "status": 200
+    }
+  ],
+  "three_state_reads_during_generation_seconds": 0.0062
+}

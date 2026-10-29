@@ -1,0 +1,14 @@
+test_assistant_uses_only_own_sanitized_context_and_reports_failure (__main__.MultiUserTests.test_assistant_uses_only_own_sanitized_context_and_reports_failure) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_expiry_limits_and_validation (__main__.MultiUserTests.test_expiry_limits_and_validation) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_mobile_calendar_notifications_map_and_directory (__main__.MultiUserTests.test_mobile_calendar_notifications_map_and_directory) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+test_three_users_login_load_notifications_and_logout_isolation (__main__.MultiUserTests.test_three_users_login_load_notifications_and_logout_isolation) ... Bridge: http://127.0.0.1:1740 (isolated sessions)
+ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 17.001s
+
+OK
+{"users": 3, "http_requests": 320, "workload_requests": 300, "errors": 0, "p95_seconds": 0.0487, "max_seconds": 0.1063, "cold_three_seconds": 0.0736, "workload_seconds": 4.8685, "scope": "Real HTTP and Chromium; Microsoft/Moodle responses are isolated synthetic fixtures, not university load testing."}

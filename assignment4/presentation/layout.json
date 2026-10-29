@@ -1,0 +1,2302 @@
+[
+  {
+    "slide": 1,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "C7B9EC"
+  },
+  {
+    "slide": 1,
+    "text": "01 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "C7B9EC"
+  },
+  {
+    "slide": 1,
+    "text": "ASSIGNMENT 04",
+    "x": 0.72,
+    "y": 0.7250000000000001,
+    "w": 1.45,
+    "h": 0.19,
+    "size": 10,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 1,
+    "text": "Multimedia\nTechnologies",
+    "x": 0.6,
+    "y": 1.52,
+    "w": 7.05,
+    "h": 1.95,
+    "size": 45,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 1,
+    "text": "The media layer of My AITU",
+    "x": 0.63,
+    "y": 3.72,
+    "w": 6.8,
+    "h": 0.42,
+    "size": 23,
+    "color": "EEE7FF"
+  },
+  {
+    "slide": 1,
+    "text": "Formats, optimisation and accessible design\nfor the LMS bridge prototype.",
+    "x": 0.63,
+    "y": 4.34,
+    "w": 6.5,
+    "h": 0.8,
+    "size": 18,
+    "color": "EEE7FF"
+  },
+  {
+    "slide": 1,
+    "text": "Salima Zimbekkyzy  ·  Azhar Saparzholova\nNurassyl Oralbekov",
+    "x": 0.64,
+    "y": 5.63,
+    "w": 6.7,
+    "h": 0.68,
+    "size": 15.5,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 1,
+    "text": "SE-2623  /  ICT",
+    "x": 0.64,
+    "y": 6.47,
+    "w": 5,
+    "h": 0.22,
+    "size": 11,
+    "color": "D7CBF1"
+  },
+  {
+    "slide": 2,
+    "text": "PART A / FORMAT STRATEGY",
+    "x": 0.58,
+    "y": 0.38,
+    "w": 11.9,
+    "h": 0.2,
+    "size": 10.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 2,
+    "text": "Choose the format for the job",
+    "x": 0.58,
+    "y": 0.87,
+    "w": 12.15,
+    "h": 0.65,
+    "size": 33,
+    "color": "241C3F"
+  },
+  {
+    "slide": 2,
+    "text": "Three questions guide every choice: what is it, where is it used, and what must stay sharp?",
+    "x": 0.6,
+    "y": 1.62,
+    "w": 12.03,
+    "h": 0.4,
+    "size": 14,
+    "color": "746C85"
+  },
+  {
+    "slide": 2,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 2,
+    "text": "02 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 2,
+    "text": "01",
+    "x": 0.71,
+    "y": 6.12,
+    "w": 0.27,
+    "h": 0.15,
+    "size": 9,
+    "color": "6540DB"
+  },
+  {
+    "slide": 2,
+    "text": "QUALITY",
+    "x": 1.21,
+    "y": 6.1,
+    "w": 3.1,
+    "h": 0.25,
+    "size": 12,
+    "color": "746C85"
+  },
+  {
+    "slide": 2,
+    "text": "02",
+    "x": 4.76,
+    "y": 6.12,
+    "w": 0.27,
+    "h": 0.15,
+    "size": 9,
+    "color": "6540DB"
+  },
+  {
+    "slide": 2,
+    "text": "FILE SIZE",
+    "x": 5.26,
+    "y": 6.1,
+    "w": 3.1,
+    "h": 0.25,
+    "size": 12,
+    "color": "746C85"
+  },
+  {
+    "slide": 2,
+    "text": "03",
+    "x": 8.81,
+    "y": 6.12,
+    "w": 0.27,
+    "h": 0.15,
+    "size": 9,
+    "color": "6540DB"
+  },
+  {
+    "slide": 2,
+    "text": "COMPATIBILITY",
+    "x": 9.31,
+    "y": 6.1,
+    "w": 3.1,
+    "h": 0.25,
+    "size": 12,
+    "color": "746C85"
+  },
+  {
+    "slide": 3,
+    "text": "A1 / FORMAT COMPARISON",
+    "x": 0.58,
+    "y": 0.38,
+    "w": 11.9,
+    "h": 0.2,
+    "size": 10.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 3,
+    "text": "One table. Ten media formats.",
+    "x": 0.58,
+    "y": 0.87,
+    "w": 12.15,
+    "h": 0.65,
+    "size": 33,
+    "color": "241C3F"
+  },
+  {
+    "slide": 3,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 3,
+    "text": "03 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 3,
+    "text": "Container = the package. Codec = how the media is encoded.",
+    "x": 0.65,
+    "y": 6.22,
+    "w": 11.95,
+    "h": 0.3,
+    "size": 17,
+    "color": "6540DB"
+  },
+  {
+    "slide": 3,
+    "text": "*Support depends on codec, OS and device. Size varies with content, resolution, bitrate and duration.\nSources cited in the original: MDN Image file type guide; Media container formats.",
+    "x": 0.65,
+    "y": 6.61,
+    "w": 11.9,
+    "h": 0.32,
+    "size": 9.5,
+    "color": "746C85"
+  },
+  {
+    "slide": 4,
+    "text": "A2 / MEASURED EXPERIMENT",
+    "x": 0.58,
+    "y": 0.38,
+    "w": 11.9,
+    "h": 0.2,
+    "size": 10.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 4,
+    "text": "Same screen. Four encodings.",
+    "x": 0.58,
+    "y": 0.87,
+    "w": 12.15,
+    "h": 0.65,
+    "size": 33,
+    "color": "241C3F"
+  },
+  {
+    "slide": 4,
+    "text": "390 × 844 pixels in every file. Measurements use binary KiB: 1 KiB = 1024 bytes.",
+    "x": 0.6,
+    "y": 1.62,
+    "w": 12.03,
+    "h": 0.4,
+    "size": 14,
+    "color": "746C85"
+  },
+  {
+    "slide": 4,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 4,
+    "text": "04 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 4,
+    "text": "73.0%",
+    "x": 9.33,
+    "y": 2.77,
+    "w": 3.12,
+    "h": 0.95,
+    "size": 52,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 4,
+    "text": "smaller than PNG",
+    "x": 9.35,
+    "y": 3.89,
+    "w": 3.03,
+    "h": 0.38,
+    "size": 20,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 4,
+    "text": "WebP Q80 saves 42.64 KiB\nat the original resolution.",
+    "x": 9.35,
+    "y": 4.53,
+    "w": 3.03,
+    "h": 0.68,
+    "size": 15,
+    "color": "EDE5FF"
+  },
+  {
+    "slide": 4,
+    "text": "VIDEO EVIDENCE PENDING",
+    "x": 0.75,
+    "y": 6.105,
+    "w": 2.57,
+    "h": 0.19,
+    "size": 10,
+    "color": "8C5D16"
+  },
+  {
+    "slide": 4,
+    "text": "The same 10-second clip still needs two measured exports.",
+    "x": 3.65,
+    "y": 6.08,
+    "w": 8.6,
+    "h": 0.3,
+    "size": 15,
+    "color": "746C85"
+  },
+  {
+    "slide": 4,
+    "text": "PNG / WebP: supplied files. JPEGs: exported from the same PNG at Q80 / Q40, 4:2:0 chroma, optimised, 25 Oct 2026.",
+    "x": 0.65,
+    "y": 6.65,
+    "w": 12,
+    "h": 0.24,
+    "size": 10,
+    "color": "746C85"
+  },
+  {
+    "slide": 5,
+    "text": "A2 / VISUAL EVIDENCE",
+    "x": 0.58,
+    "y": 0.38,
+    "w": 11.9,
+    "h": 0.2,
+    "size": 10.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 5,
+    "text": "Look at the edges, not just the number.",
+    "x": 0.58,
+    "y": 0.87,
+    "w": 12.15,
+    "h": 0.65,
+    "size": 33,
+    "color": "241C3F"
+  },
+  {
+    "slide": 5,
+    "text": "Identical 360 × 360 pixel crops, displayed at the same scale.",
+    "x": 0.6,
+    "y": 1.62,
+    "w": 12.03,
+    "h": 0.4,
+    "size": 14,
+    "color": "746C85"
+  },
+  {
+    "slide": 5,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 5,
+    "text": "05 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 5,
+    "text": "PNG",
+    "x": 0.78,
+    "y": 2.37,
+    "w": 2.54,
+    "h": 0.32,
+    "size": 18,
+    "color": "241C3F"
+  },
+  {
+    "slide": 5,
+    "text": "58.39 KiB",
+    "x": 0.78,
+    "y": 5.78,
+    "w": 2.54,
+    "h": 0.22,
+    "size": 12.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 5,
+    "text": "Crisp source text",
+    "x": 0.65,
+    "y": 6.35,
+    "w": 2.8,
+    "h": 0.27,
+    "size": 12,
+    "color": "746C85"
+  },
+  {
+    "slide": 5,
+    "text": "JPEG Q80",
+    "x": 3.8550000000000004,
+    "y": 2.37,
+    "w": 2.54,
+    "h": 0.32,
+    "size": 18,
+    "color": "241C3F"
+  },
+  {
+    "slide": 5,
+    "text": "28.72 KiB",
+    "x": 3.8550000000000004,
+    "y": 5.78,
+    "w": 2.54,
+    "h": 0.22,
+    "size": 12.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 5,
+    "text": "Light halos on edges",
+    "x": 3.725,
+    "y": 6.35,
+    "w": 2.8,
+    "h": 0.27,
+    "size": 12,
+    "color": "746C85"
+  },
+  {
+    "slide": 5,
+    "text": "JPEG Q40",
+    "x": 6.93,
+    "y": 2.37,
+    "w": 2.54,
+    "h": 0.32,
+    "size": 18,
+    "color": "241C3F"
+  },
+  {
+    "slide": 5,
+    "text": "16.49 KiB",
+    "x": 6.93,
+    "y": 5.78,
+    "w": 2.54,
+    "h": 0.22,
+    "size": 12.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 5,
+    "text": "More obvious ringing",
+    "x": 6.8,
+    "y": 6.35,
+    "w": 2.8,
+    "h": 0.27,
+    "size": 12,
+    "color": "746C85"
+  },
+  {
+    "slide": 5,
+    "text": "WebP Q80",
+    "x": 10.005,
+    "y": 2.37,
+    "w": 2.54,
+    "h": 0.32,
+    "size": 18,
+    "color": "241C3F"
+  },
+  {
+    "slide": 5,
+    "text": "15.75 KiB",
+    "x": 10.005,
+    "y": 5.78,
+    "w": 2.54,
+    "h": 0.22,
+    "size": 12.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 5,
+    "text": "Readable UI details",
+    "x": 9.875000000000002,
+    "y": 6.35,
+    "w": 2.8,
+    "h": 0.27,
+    "size": 12,
+    "color": "746C85"
+  },
+  {
+    "slide": 6,
+    "text": "A2 / OUR FORMAT CHOICES",
+    "x": 0.58,
+    "y": 0.38,
+    "w": 11.9,
+    "h": 0.2,
+    "size": 10.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 6,
+    "text": "Smaller files. Same screen dimensions.",
+    "x": 0.58,
+    "y": 0.87,
+    "w": 12.15,
+    "h": 0.65,
+    "size": 33,
+    "color": "241C3F"
+  },
+  {
+    "slide": 6,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 6,
+    "text": "06 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 6,
+    "text": "Preview image size (KiB)",
+    "x": 0.88,
+    "y": 2.23,
+    "w": 6.4,
+    "h": 0.31,
+    "size": 19,
+    "color": "241C3F"
+  },
+  {
+    "slide": 6,
+    "text": "42.64 KiB saved per preview",
+    "x": 0.94,
+    "y": 5.91,
+    "w": 6.23,
+    "h": 0.33,
+    "size": 19,
+    "color": "6540DB"
+  },
+  {
+    "slide": 6,
+    "text": "1",
+    "x": 8.19,
+    "y": 2.12,
+    "w": 0.2,
+    "h": 0.2,
+    "size": 12,
+    "color": "6540DB"
+  },
+  {
+    "slide": 6,
+    "text": "WebP Q80",
+    "x": 8.68,
+    "y": 2.04,
+    "w": 4.05,
+    "h": 0.34,
+    "size": 20,
+    "color": "241C3F"
+  },
+  {
+    "slide": 6,
+    "text": "Use for the attendance preview.",
+    "x": 8.68,
+    "y": 2.5300000000000002,
+    "w": 3.91,
+    "h": 0.64,
+    "size": 15,
+    "color": "746C85"
+  },
+  {
+    "slide": 6,
+    "text": "2",
+    "x": 8.19,
+    "y": 3.52,
+    "w": 0.2,
+    "h": 0.2,
+    "size": 12,
+    "color": "6540DB"
+  },
+  {
+    "slide": 6,
+    "text": "PNG",
+    "x": 8.68,
+    "y": 3.44,
+    "w": 4.05,
+    "h": 0.34,
+    "size": 20,
+    "color": "241C3F"
+  },
+  {
+    "slide": 6,
+    "text": "Retain the lossless evidence image.",
+    "x": 8.68,
+    "y": 3.9299999999999997,
+    "w": 3.91,
+    "h": 0.64,
+    "size": 15,
+    "color": "746C85"
+  },
+  {
+    "slide": 6,
+    "text": "3",
+    "x": 8.19,
+    "y": 4.92,
+    "w": 0.2,
+    "h": 0.2,
+    "size": 12,
+    "color": "6540DB"
+  },
+  {
+    "slide": 6,
+    "text": "Inline SVG + CSS",
+    "x": 8.68,
+    "y": 4.84,
+    "w": 4.05,
+    "h": 0.34,
+    "size": 20,
+    "color": "241C3F"
+  },
+  {
+    "slide": 6,
+    "text": "Use vectors for icons and CSS for motion.",
+    "x": 8.68,
+    "y": 5.33,
+    "w": 3.91,
+    "h": 0.64,
+    "size": 15,
+    "color": "746C85"
+  },
+  {
+    "slide": 6,
+    "text": "File-size reduction does not prove faster network loading.",
+    "x": 8.08,
+    "y": 6.29,
+    "w": 4.55,
+    "h": 0.36,
+    "size": 12,
+    "color": "746C85"
+  },
+  {
+    "slide": 7,
+    "text": "B1 / INTERFACE ICONS",
+    "x": 0.58,
+    "y": 0.38,
+    "w": 11.9,
+    "h": 0.2,
+    "size": 10.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 7,
+    "text": "18 icons. One HTML response.",
+    "x": 0.58,
+    "y": 0.87,
+    "w": 12.15,
+    "h": 0.65,
+    "size": 33,
+    "color": "241C3F"
+  },
+  {
+    "slide": 7,
+    "text": "Inline SVG markup is embedded in the page; the values below are source bytes, not separate downloads.",
+    "x": 0.6,
+    "y": 1.62,
+    "w": 12.03,
+    "h": 0.4,
+    "size": 14,
+    "color": "746C85"
+  },
+  {
+    "slide": 7,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 7,
+    "text": "07 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 7,
+    "text": "Flaticon Uicons Regular Rounded  ·  SVG viewBox 300 × 300  ·  Free licence with visible footer attribution.",
+    "x": 0.66,
+    "y": 6.47,
+    "w": 11.9,
+    "h": 0.33,
+    "size": 11.4,
+    "color": "746C85"
+  },
+  {
+    "slide": 8,
+    "text": "B1 / ASSET INVENTORY",
+    "x": 0.58,
+    "y": 0.38,
+    "w": 11.9,
+    "h": 0.2,
+    "size": 10.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 8,
+    "text": "The rest of the media stack",
+    "x": 0.58,
+    "y": 0.87,
+    "w": 12.15,
+    "h": 0.65,
+    "size": 33,
+    "color": "241C3F"
+  },
+  {
+    "slide": 8,
+    "text": "25 assets in the inventory: 18 icons and these seven visual, type and support elements.",
+    "x": 0.6,
+    "y": 1.62,
+    "w": 12.03,
+    "h": 0.4,
+    "size": 14,
+    "color": "746C85"
+  },
+  {
+    "slide": 8,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 8,
+    "text": "08 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 8,
+    "text": "¹ Flaticon attribution in footer.  ² github.com/Yuujiso/aitumap.  ³ github.com/rsms/inter.",
+    "x": 0.66,
+    "y": 6.25,
+    "w": 11.9,
+    "h": 0.25,
+    "size": 10.5,
+    "color": "746C85"
+  },
+  {
+    "slide": 8,
+    "text": "The remote browser view is private and must stay out of the demo. Evidence PNGs and two unused SVG symbols are not loaded by the interface.",
+    "x": 0.66,
+    "y": 6.62,
+    "w": 11.9,
+    "h": 0.32,
+    "size": 10.5,
+    "color": "746C85"
+  },
+  {
+    "slide": 9,
+    "text": "B2 / INTEGRATION & OPTIMISATION",
+    "x": 0.58,
+    "y": 0.38,
+    "w": 11.9,
+    "h": 0.2,
+    "size": 10.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 9,
+    "text": "A lighter payload, with clear limits.",
+    "x": 0.58,
+    "y": 0.87,
+    "w": 12.15,
+    "h": 0.65,
+    "size": 33,
+    "color": "241C3F"
+  },
+  {
+    "slide": 9,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 9,
+    "text": "09 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 9,
+    "text": "73.0%",
+    "x": 0.82,
+    "y": 2.12,
+    "w": 3.45,
+    "h": 0.59,
+    "size": 34,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 9,
+    "text": "smaller preview",
+    "x": 0.82,
+    "y": 2.83,
+    "w": 3.45,
+    "h": 0.22,
+    "size": 12.2,
+    "color": "ECE4FF"
+  },
+  {
+    "slide": 9,
+    "text": "30.8%",
+    "x": 4.93,
+    "y": 2.12,
+    "w": 3.45,
+    "h": 0.59,
+    "size": 34,
+    "color": "6540DB"
+  },
+  {
+    "slide": 9,
+    "text": "smaller controlled file set",
+    "x": 4.93,
+    "y": 2.83,
+    "w": 3.45,
+    "h": 0.22,
+    "size": 12.2,
+    "color": "746C85"
+  },
+  {
+    "slide": 9,
+    "text": "0",
+    "x": 9.040000000000001,
+    "y": 2.12,
+    "w": 3.45,
+    "h": 0.59,
+    "size": 34,
+    "color": "6540DB"
+  },
+  {
+    "slide": 9,
+    "text": "expected image-request delta",
+    "x": 9.040000000000001,
+    "y": 2.83,
+    "w": 3.45,
+    "h": 0.22,
+    "size": 12.2,
+    "color": "746C85"
+  },
+  {
+    "slide": 9,
+    "text": "Integrated",
+    "x": 0.65,
+    "y": 5.57,
+    "w": 5.8,
+    "h": 0.3,
+    "size": 19,
+    "color": "241C3F"
+  },
+  {
+    "slide": 9,
+    "text": "Responsive 250 px preview, inline SVG icons, CSS login pulse and reduced-motion support.",
+    "x": 0.65,
+    "y": 6,
+    "w": 5.72,
+    "h": 0.63,
+    "size": 14,
+    "color": "746C85"
+  },
+  {
+    "slide": 9,
+    "text": "Still to measure",
+    "x": 6.97,
+    "y": 5.57,
+    "w": 5.75,
+    "h": 0.3,
+    "size": 19,
+    "color": "241C3F"
+  },
+  {
+    "slide": 9,
+    "text": "DevTools: transferred bytes, requests and Finish/Load time on Fast 4G with cache disabled.",
+    "x": 6.97,
+    "y": 6,
+    "w": 5.72,
+    "h": 0.63,
+    "size": 14,
+    "color": "746C85"
+  },
+  {
+    "slide": 9,
+    "text": "Source: Part B inventory, 23 Oct 2026. Calculated local file bytes; external traffic and compression are excluded.",
+    "x": 0.65,
+    "y": 6.74,
+    "w": 12,
+    "h": 0.19,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 10,
+    "text": "B3 / MEDIA ACCESSIBILITY",
+    "x": 0.58,
+    "y": 0.38,
+    "w": 11.9,
+    "h": 0.2,
+    "size": 10.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 10,
+    "text": "Make the experience understandable.",
+    "x": 0.58,
+    "y": 0.87,
+    "w": 12.15,
+    "h": 0.65,
+    "size": 33,
+    "color": "241C3F"
+  },
+  {
+    "slide": 10,
+    "text": "Implemented behaviours and checks from the prototype inventory.",
+    "x": 0.6,
+    "y": 1.62,
+    "w": 12.03,
+    "h": 0.4,
+    "size": 14,
+    "color": "746C85"
+  },
+  {
+    "slide": 10,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 10,
+    "text": "10 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 10,
+    "text": "IMPLEMENTED",
+    "x": 0.9,
+    "y": 2.4250000000000003,
+    "w": 1.3,
+    "h": 0.19,
+    "size": 10,
+    "color": "12836F"
+  },
+  {
+    "slide": 10,
+    "text": "Descriptive alt text",
+    "x": 0.8,
+    "y": 2.91,
+    "w": 3.51,
+    "h": 0.35,
+    "size": 18,
+    "color": "241C3F"
+  },
+  {
+    "slide": 10,
+    "text": "The attendance preview describes the calendar and status counts.",
+    "x": 0.8,
+    "y": 3.41,
+    "w": 3.51,
+    "h": 0.65,
+    "size": 13,
+    "color": "746C85"
+  },
+  {
+    "slide": 10,
+    "text": "IMPLEMENTED",
+    "x": 5.01,
+    "y": 2.4250000000000003,
+    "w": 1.3,
+    "h": 0.19,
+    "size": 10,
+    "color": "12836F"
+  },
+  {
+    "slide": 10,
+    "text": "Decorative SVGs",
+    "x": 4.91,
+    "y": 2.91,
+    "w": 3.51,
+    "h": 0.35,
+    "size": 18,
+    "color": "241C3F"
+  },
+  {
+    "slide": 10,
+    "text": "Icons are hidden from screen readers; controls keep text or labels.",
+    "x": 4.91,
+    "y": 3.41,
+    "w": 3.51,
+    "h": 0.65,
+    "size": 13,
+    "color": "746C85"
+  },
+  {
+    "slide": 10,
+    "text": "IMPLEMENTED",
+    "x": 9.12,
+    "y": 2.4250000000000003,
+    "w": 1.3,
+    "h": 0.19,
+    "size": 10,
+    "color": "12836F"
+  },
+  {
+    "slide": 10,
+    "text": "Reduced motion",
+    "x": 9.02,
+    "y": 2.91,
+    "w": 3.51,
+    "h": 0.35,
+    "size": 18,
+    "color": "241C3F"
+  },
+  {
+    "slide": 10,
+    "text": "The user’s preference disables animations and transitions.",
+    "x": 9.02,
+    "y": 3.41,
+    "w": 3.51,
+    "h": 0.65,
+    "size": 13,
+    "color": "746C85"
+  },
+  {
+    "slide": 10,
+    "text": "IMPLEMENTED",
+    "x": 0.9,
+    "y": 4.705,
+    "w": 1.3,
+    "h": 0.19,
+    "size": 10,
+    "color": "12836F"
+  },
+  {
+    "slide": 10,
+    "text": "Visible progress",
+    "x": 0.8,
+    "y": 5.1899999999999995,
+    "w": 3.51,
+    "h": 0.35,
+    "size": 18,
+    "color": "241C3F"
+  },
+  {
+    "slide": 10,
+    "text": "Login progress has text and a visual pulse. No sound-only information.",
+    "x": 0.8,
+    "y": 5.6899999999999995,
+    "w": 3.51,
+    "h": 0.65,
+    "size": 13,
+    "color": "746C85"
+  },
+  {
+    "slide": 10,
+    "text": "NOT APPLICABLE",
+    "x": 5.01,
+    "y": 4.705,
+    "w": 1.73,
+    "h": 0.19,
+    "size": 10,
+    "color": "6540DB"
+  },
+  {
+    "slide": 10,
+    "text": "Captions / transcript",
+    "x": 4.91,
+    "y": 5.1899999999999995,
+    "w": 3.51,
+    "h": 0.35,
+    "size": 18,
+    "color": "241C3F"
+  },
+  {
+    "slide": 10,
+    "text": "No speech audio or video is embedded in the prototype.",
+    "x": 4.91,
+    "y": 5.6899999999999995,
+    "w": 3.51,
+    "h": 0.65,
+    "size": 13,
+    "color": "746C85"
+  },
+  {
+    "slide": 10,
+    "text": "NOT APPLICABLE",
+    "x": 9.12,
+    "y": 4.705,
+    "w": 1.73,
+    "h": 0.19,
+    "size": 10,
+    "color": "6540DB"
+  },
+  {
+    "slide": 10,
+    "text": "Text over images",
+    "x": 9.02,
+    "y": 5.1899999999999995,
+    "w": 3.51,
+    "h": 0.35,
+    "size": 18,
+    "color": "241C3F"
+  },
+  {
+    "slide": 10,
+    "text": "Captions sit below images; live text does not overlay raster images.",
+    "x": 9.02,
+    "y": 5.6899999999999995,
+    "w": 3.51,
+    "h": 0.65,
+    "size": 13,
+    "color": "746C85"
+  },
+  {
+    "slide": 11,
+    "text": "PART C / MULTIMEDIA PRESENTATION",
+    "x": 0.58,
+    "y": 0.38,
+    "w": 11.9,
+    "h": 0.2,
+    "size": 10.5,
+    "color": "C9B7FA"
+  },
+  {
+    "slide": 11,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "C7B9EC"
+  },
+  {
+    "slide": 11,
+    "text": "11 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "C7B9EC"
+  },
+  {
+    "slide": 11,
+    "text": "Show the product.\nTell its story.",
+    "x": 0.62,
+    "y": 1.32,
+    "w": 8.65,
+    "h": 1.67,
+    "size": 43,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 11,
+    "text": "A narrated walkthrough of the My AITU / LMS bridge.",
+    "x": 0.65,
+    "y": 3.48,
+    "w": 10.7,
+    "h": 0.46,
+    "size": 20,
+    "color": "D2C4EC"
+  },
+  {
+    "slide": 11,
+    "text": "2:10",
+    "x": 0.65,
+    "y": 4.7,
+    "w": 3.3,
+    "h": 0.95,
+    "size": 57,
+    "color": "BFA4FF"
+  },
+  {
+    "slide": 11,
+    "text": "planned running time",
+    "x": 0.68,
+    "y": 5.8,
+    "w": 3.85,
+    "h": 0.3,
+    "size": 15,
+    "color": "D2C4EC"
+  },
+  {
+    "slide": 11,
+    "text": "01",
+    "x": 5.155,
+    "y": 4.99,
+    "w": 0.31,
+    "h": 0.17,
+    "size": 11,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 11,
+    "text": "Sign in",
+    "x": 5.05,
+    "y": 5.64,
+    "w": 1.8,
+    "h": 0.34,
+    "size": 14,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 11,
+    "text": "02",
+    "x": 7.065,
+    "y": 4.99,
+    "w": 0.31,
+    "h": 0.17,
+    "size": 11,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 11,
+    "text": "Explore",
+    "x": 6.96,
+    "y": 5.64,
+    "w": 1.8,
+    "h": 0.34,
+    "size": 14,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 11,
+    "text": "03",
+    "x": 8.975,
+    "y": 4.99,
+    "w": 0.31,
+    "h": 0.17,
+    "size": 11,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 11,
+    "text": "Explain",
+    "x": 8.87,
+    "y": 5.64,
+    "w": 1.8,
+    "h": 0.34,
+    "size": 14,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 11,
+    "text": "04",
+    "x": 10.885,
+    "y": 4.99,
+    "w": 0.31,
+    "h": 0.17,
+    "size": 11,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 11,
+    "text": "Look ahead",
+    "x": 10.78,
+    "y": 5.64,
+    "w": 1.8,
+    "h": 0.34,
+    "size": 14,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 12,
+    "text": "C1 / STORYBOARD",
+    "x": 0.58,
+    "y": 0.38,
+    "w": 11.9,
+    "h": 0.2,
+    "size": 10.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 12,
+    "text": "A clear role for every narrator.",
+    "x": 0.58,
+    "y": 0.87,
+    "w": 12.15,
+    "h": 0.65,
+    "size": 33,
+    "color": "241C3F"
+  },
+  {
+    "slide": 12,
+    "text": "Four scenes connect the working prototype to its purpose and next steps.",
+    "x": 0.6,
+    "y": 1.62,
+    "w": 12.03,
+    "h": 0.4,
+    "size": 14,
+    "color": "746C85"
+  },
+  {
+    "slide": 12,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 12,
+    "text": "12 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 12,
+    "text": "TOTAL · 2 MIN 10 SEC",
+    "x": 0.75,
+    "y": 6.485,
+    "w": 2.0999999999999996,
+    "h": 0.19,
+    "size": 10,
+    "color": "6540DB"
+  },
+  {
+    "slide": 13,
+    "text": "C2 / THE VIDEO",
+    "x": 0.58,
+    "y": 0.38,
+    "w": 11.9,
+    "h": 0.2,
+    "size": 10.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 13,
+    "text": "Open the project demonstration.",
+    "x": 0.58,
+    "y": 0.87,
+    "w": 12.15,
+    "h": 0.65,
+    "size": 33,
+    "color": "241C3F"
+  },
+  {
+    "slide": 13,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 13,
+    "text": "13 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 13,
+    "text": "My AITU / LMS bridge",
+    "x": 1,
+    "y": 4.57,
+    "w": 7.3,
+    "h": 0.48,
+    "size": 28,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 13,
+    "text": "Team walkthrough · Google Drive folder",
+    "x": 1.02,
+    "y": 5.29,
+    "w": 7.12,
+    "h": 0.35,
+    "size": 17,
+    "color": "D7C9EE"
+  },
+  {
+    "slide": 13,
+    "text": "OPEN VIDEO FOLDER",
+    "x": 1.23,
+    "y": 6.15,
+    "w": 2.77,
+    "h": 0.24,
+    "size": 14,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 13,
+    "text": "Scan to open",
+    "x": 9.09,
+    "y": 5.28,
+    "w": 3.5,
+    "h": 0.34,
+    "size": 21,
+    "color": "241C3F"
+  },
+  {
+    "slide": 13,
+    "text": "Opens the project’s\nGoogle Drive folder.",
+    "x": 9.1,
+    "y": 5.91,
+    "w": 3.5,
+    "h": 0.6,
+    "size": 14,
+    "color": "746C85"
+  },
+  {
+    "slide": 14,
+    "text": "C3 / PRODUCTION NOTE",
+    "x": 0.58,
+    "y": 0.38,
+    "w": 11.9,
+    "h": 0.2,
+    "size": 10.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 14,
+    "text": "The plan is defined. Export details remain.",
+    "x": 0.58,
+    "y": 0.87,
+    "w": 12.15,
+    "h": 0.65,
+    "size": 33,
+    "color": "241C3F"
+  },
+  {
+    "slide": 14,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 14,
+    "text": "14 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 14,
+    "text": "Production note",
+    "x": 0.88,
+    "y": 2.29,
+    "w": 7.43,
+    "h": 0.38,
+    "size": 22,
+    "color": "241C3F"
+  },
+  {
+    "slide": 14,
+    "text": "The storyboard plans a 2-minute 10-second walkthrough of the My AITU / LMS bridge, with narration from all three team members. It covers sign-in, key pages, the project’s purpose and future work. MP4 with H.264 video and AAC audio is the planned delivery format for broad device playback. The linked Drive folder is the hand-off location. Recording and editing tools, final resolution, frame rate, bitrate and file size were not supplied, so they cannot yet be reported as completed production settings. These values should be checked against the final exported video before submission.",
+    "x": 0.9,
+    "y": 2.99,
+    "w": 7.36,
+    "h": 3.25,
+    "size": 17,
+    "color": "746C85"
+  },
+  {
+    "slide": 14,
+    "text": "FINAL FILE NOT INSPECTED",
+    "x": 9.25,
+    "y": 2.295,
+    "w": 3.1599999999999997,
+    "h": 0.19,
+    "size": 10,
+    "color": "6540DB"
+  },
+  {
+    "slide": 14,
+    "text": "Confirm before\nsubmission",
+    "x": 9.19,
+    "y": 2.98,
+    "w": 3.31,
+    "h": 0.91,
+    "size": 26,
+    "color": "241C3F"
+  },
+  {
+    "slide": 14,
+    "text": "Recording + editing tools\nResolution + frame rate\nVideo + audio bitrate\nFinal duration + file size",
+    "x": 9.19,
+    "y": 4.35,
+    "w": 3.31,
+    "h": 1.76,
+    "size": 15.5,
+    "color": "241C3F"
+  },
+  {
+    "slide": 15,
+    "text": "PART D / INTEGRATION",
+    "x": 0.58,
+    "y": 0.38,
+    "w": 11.9,
+    "h": 0.2,
+    "size": 10.5,
+    "color": "C9B7FA"
+  },
+  {
+    "slide": 15,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "C7B9EC"
+  },
+  {
+    "slide": 15,
+    "text": "15 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "C7B9EC"
+  },
+  {
+    "slide": 15,
+    "text": "From media assets\nto a working bridge.",
+    "x": 0.65,
+    "y": 1.25,
+    "w": 11.8,
+    "h": 1.6,
+    "size": 42,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 15,
+    "text": "The multimedia layer supports the same project and prototype.",
+    "x": 0.68,
+    "y": 3.26,
+    "w": 11.5,
+    "h": 0.42,
+    "size": 20,
+    "color": "D2C4EC"
+  },
+  {
+    "slide": 15,
+    "text": "01",
+    "x": 0.8500000000000001,
+    "y": 4.62,
+    "w": 0.6,
+    "h": 0.28,
+    "size": 13,
+    "color": "BFA4FF"
+  },
+  {
+    "slide": 15,
+    "text": "Sign in",
+    "x": 0.8500000000000001,
+    "y": 5.04,
+    "w": 2.95,
+    "h": 0.38,
+    "size": 24,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 15,
+    "text": "Individual user session",
+    "x": 0.8500000000000001,
+    "y": 5.61,
+    "w": 2.95,
+    "h": 0.27,
+    "size": 12,
+    "color": "D2C4EC"
+  },
+  {
+    "slide": 15,
+    "text": "→",
+    "x": 4.3,
+    "y": 5.02,
+    "w": 0.48,
+    "h": 0.4,
+    "size": 25,
+    "color": "BFA4FF"
+  },
+  {
+    "slide": 15,
+    "text": "02",
+    "x": 5.2,
+    "y": 4.62,
+    "w": 0.6,
+    "h": 0.28,
+    "size": 13,
+    "color": "BFA4FF"
+  },
+  {
+    "slide": 15,
+    "text": "Read LMS",
+    "x": 5.2,
+    "y": 5.04,
+    "w": 2.95,
+    "h": 0.38,
+    "size": 24,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 15,
+    "text": "Course and attendance data",
+    "x": 5.2,
+    "y": 5.61,
+    "w": 2.95,
+    "h": 0.27,
+    "size": 12,
+    "color": "D2C4EC"
+  },
+  {
+    "slide": 15,
+    "text": "→",
+    "x": 8.65,
+    "y": 5.02,
+    "w": 0.48,
+    "h": 0.4,
+    "size": 25,
+    "color": "BFA4FF"
+  },
+  {
+    "slide": 15,
+    "text": "03",
+    "x": 9.549999999999999,
+    "y": 4.62,
+    "w": 0.6,
+    "h": 0.28,
+    "size": 13,
+    "color": "BFA4FF"
+  },
+  {
+    "slide": 15,
+    "text": "Present clearly",
+    "x": 9.549999999999999,
+    "y": 5.04,
+    "w": 2.95,
+    "h": 0.38,
+    "size": 24,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 15,
+    "text": "A responsive student interface",
+    "x": 9.549999999999999,
+    "y": 5.61,
+    "w": 2.95,
+    "h": 0.27,
+    "size": 12,
+    "color": "D2C4EC"
+  },
+  {
+    "slide": 16,
+    "text": "D1 / UPDATED PROTOTYPE",
+    "x": 0.58,
+    "y": 0.38,
+    "w": 11.9,
+    "h": 0.2,
+    "size": 10.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 16,
+    "text": "Run the project from its repository.",
+    "x": 0.58,
+    "y": 0.87,
+    "w": 12.15,
+    "h": 0.65,
+    "size": 33,
+    "color": "241C3F"
+  },
+  {
+    "slide": 16,
+    "text": "Linux launch sequence from bridge-test/README.md.",
+    "x": 0.6,
+    "y": 1.62,
+    "w": 12.03,
+    "h": 0.4,
+    "size": 14,
+    "color": "746C85"
+  },
+  {
+    "slide": 16,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 16,
+    "text": "16 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 16,
+    "text": "01",
+    "x": 0.7,
+    "y": 2.2,
+    "w": 0.26,
+    "h": 0.16,
+    "size": 9.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 16,
+    "text": "Clone the project",
+    "x": 1.2,
+    "y": 2.08,
+    "w": 7.63,
+    "h": 0.28,
+    "size": 17,
+    "color": "241C3F"
+  },
+  {
+    "slide": 16,
+    "text": "git clone https://github.com/d30mantcoder/ICTProject",
+    "x": 1.2,
+    "y": 2.5,
+    "w": 7.65,
+    "h": 0.51,
+    "size": 11.1,
+    "color": "746C85"
+  },
+  {
+    "slide": 16,
+    "text": "02",
+    "x": 0.7,
+    "y": 3.2800000000000002,
+    "w": 0.26,
+    "h": 0.16,
+    "size": 9.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 16,
+    "text": "Create an environment",
+    "x": 1.2,
+    "y": 3.16,
+    "w": 7.63,
+    "h": 0.28,
+    "size": 17,
+    "color": "241C3F"
+  },
+  {
+    "slide": 16,
+    "text": "cd ICTProject  &&  python -m venv venv",
+    "x": 1.2,
+    "y": 3.58,
+    "w": 7.65,
+    "h": 0.51,
+    "size": 11.1,
+    "color": "746C85"
+  },
+  {
+    "slide": 16,
+    "text": "03",
+    "x": 0.7,
+    "y": 4.36,
+    "w": 0.26,
+    "h": 0.16,
+    "size": 9.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 16,
+    "text": "Install dependencies and Chromium",
+    "x": 1.2,
+    "y": 4.24,
+    "w": 7.63,
+    "h": 0.28,
+    "size": 17,
+    "color": "241C3F"
+  },
+  {
+    "slide": 16,
+    "text": "venv/bin/python -m pip install -r bridge-test/requirements.txt\nvenv/bin/python -m playwright install chromium --only-shell",
+    "x": 1.2,
+    "y": 4.66,
+    "w": 7.65,
+    "h": 0.51,
+    "size": 10.5,
+    "color": "746C85"
+  },
+  {
+    "slide": 16,
+    "text": "04",
+    "x": 0.7,
+    "y": 5.44,
+    "w": 0.26,
+    "h": 0.16,
+    "size": 9.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 16,
+    "text": "Launch the bridge",
+    "x": 1.2,
+    "y": 5.32,
+    "w": 7.63,
+    "h": 0.28,
+    "size": 17,
+    "color": "241C3F"
+  },
+  {
+    "slide": 16,
+    "text": "BRIDGE_HEADLESS=1 venv/bin/python bridge-test/app.py",
+    "x": 1.2,
+    "y": 5.74,
+    "w": 7.65,
+    "h": 0.51,
+    "size": 11.1,
+    "color": "746C85"
+  },
+  {
+    "slide": 16,
+    "text": "OPEN REPOSITORY",
+    "x": 9.35,
+    "y": 5.5200000000000005,
+    "w": 3.18,
+    "h": 0.24,
+    "size": 14,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 16,
+    "text": "Local address\n127.0.0.1:1740",
+    "x": 9.2,
+    "y": 6.14,
+    "w": 3.47,
+    "h": 0.51,
+    "size": 14,
+    "color": "746C85"
+  },
+  {
+    "slide": 17,
+    "text": "D2 / CHANGE LOG",
+    "x": 0.58,
+    "y": 0.38,
+    "w": 11.9,
+    "h": 0.2,
+    "size": 10.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 17,
+    "text": "Three changes that make the bridge useful.",
+    "x": 0.58,
+    "y": 0.87,
+    "w": 12.15,
+    "h": 0.65,
+    "size": 33,
+    "color": "241C3F"
+  },
+  {
+    "slide": 17,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 17,
+    "text": "17 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 17,
+    "text": "SCALE LIMIT STILL OPEN",
+    "x": 0.75,
+    "y": 6.735,
+    "w": 2.4,
+    "h": 0.19,
+    "size": 10,
+    "color": "8C5D16"
+  },
+  {
+    "slide": 17,
+    "text": "<3 seconds per request at 1,000 users has not been verified.",
+    "x": 3.53,
+    "y": 6.7,
+    "w": 9.1,
+    "h": 0.24,
+    "size": 12.5,
+    "color": "746C85"
+  },
+  {
+    "slide": 18,
+    "text": "D3 / TEAM CONTRIBUTIONS",
+    "x": 0.58,
+    "y": 0.38,
+    "w": 11.9,
+    "h": 0.2,
+    "size": 10.5,
+    "color": "6540DB"
+  },
+  {
+    "slide": 18,
+    "text": "One project. Three areas of ownership.",
+    "x": 0.58,
+    "y": 0.87,
+    "w": 12.15,
+    "h": 0.65,
+    "size": 33,
+    "color": "241C3F"
+  },
+  {
+    "slide": 18,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 18,
+    "text": "18 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "746C85"
+  },
+  {
+    "slide": 18,
+    "text": "SZ",
+    "x": 0.98,
+    "y": 2.62,
+    "w": 0.53,
+    "h": 0.24,
+    "size": 17,
+    "color": "6540DB"
+  },
+  {
+    "slide": 18,
+    "text": "Salima",
+    "x": 0.86,
+    "y": 3.49,
+    "w": 3.39,
+    "h": 0.5,
+    "size": 29,
+    "color": "241C3F"
+  },
+  {
+    "slide": 18,
+    "text": "Zimbekkyzy",
+    "x": 0.86,
+    "y": 4.08,
+    "w": 3.39,
+    "h": 0.37,
+    "size": 18,
+    "color": "746C85"
+  },
+  {
+    "slide": 18,
+    "text": "PARTS C + D",
+    "x": 0.96,
+    "y": 4.835,
+    "w": 1.46,
+    "h": 0.19,
+    "size": 10,
+    "color": "6540DB"
+  },
+  {
+    "slide": 18,
+    "text": "Video editing",
+    "x": 0.86,
+    "y": 5.51,
+    "w": 3.39,
+    "h": 0.73,
+    "size": 19,
+    "color": "241C3F"
+  },
+  {
+    "slide": 18,
+    "text": "AS",
+    "x": 5.09,
+    "y": 2.62,
+    "w": 0.53,
+    "h": 0.24,
+    "size": 17,
+    "color": "6540DB"
+  },
+  {
+    "slide": 18,
+    "text": "Azhar",
+    "x": 4.97,
+    "y": 3.49,
+    "w": 3.39,
+    "h": 0.5,
+    "size": 29,
+    "color": "241C3F"
+  },
+  {
+    "slide": 18,
+    "text": "Saparzholova",
+    "x": 4.97,
+    "y": 4.08,
+    "w": 3.39,
+    "h": 0.37,
+    "size": 18,
+    "color": "746C85"
+  },
+  {
+    "slide": 18,
+    "text": "PARTS A + D",
+    "x": 5.069999999999999,
+    "y": 4.835,
+    "w": 1.46,
+    "h": 0.19,
+    "size": 10,
+    "color": "6540DB"
+  },
+  {
+    "slide": 18,
+    "text": "Multimedia format comparison",
+    "x": 4.97,
+    "y": 5.51,
+    "w": 3.39,
+    "h": 0.73,
+    "size": 19,
+    "color": "241C3F"
+  },
+  {
+    "slide": 18,
+    "text": "NO",
+    "x": 9.200000000000001,
+    "y": 2.62,
+    "w": 0.53,
+    "h": 0.24,
+    "size": 17,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 18,
+    "text": "Nurassyl",
+    "x": 9.08,
+    "y": 3.49,
+    "w": 3.39,
+    "h": 0.5,
+    "size": 29,
+    "color": "241C3F"
+  },
+  {
+    "slide": 18,
+    "text": "Oralbekov",
+    "x": 9.08,
+    "y": 4.08,
+    "w": 3.39,
+    "h": 0.37,
+    "size": 18,
+    "color": "746C85"
+  },
+  {
+    "slide": 18,
+    "text": "PARTS B + D",
+    "x": 9.18,
+    "y": 4.835,
+    "w": 1.46,
+    "h": 0.19,
+    "size": 10,
+    "color": "6540DB"
+  },
+  {
+    "slide": 18,
+    "text": "Media integration and optimisation",
+    "x": 9.08,
+    "y": 5.51,
+    "w": 3.39,
+    "h": 0.73,
+    "size": 19,
+    "color": "241C3F"
+  },
+  {
+    "slide": 19,
+    "text": "THANK YOU",
+    "x": 0.58,
+    "y": 0.38,
+    "w": 11.9,
+    "h": 0.2,
+    "size": 10.5,
+    "color": "C9B7FA"
+  },
+  {
+    "slide": 19,
+    "text": "MY AITU  /  ICT ASSIGNMENT 4",
+    "x": 0.58,
+    "y": 7.04,
+    "w": 9,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "C7B9EC"
+  },
+  {
+    "slide": 19,
+    "text": "19 / 19",
+    "x": 11.7,
+    "y": 7.04,
+    "w": 1.04,
+    "h": 0.18,
+    "size": 9.3,
+    "color": "C7B9EC"
+  },
+  {
+    "slide": 19,
+    "text": "Less weight.\nMore clarity.",
+    "x": 0.65,
+    "y": 1.15,
+    "w": 11.6,
+    "h": 1.9,
+    "size": 52,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 19,
+    "text": "Multimedia choices that support a better student experience.",
+    "x": 0.69,
+    "y": 3.49,
+    "w": 11.5,
+    "h": 0.44,
+    "size": 20,
+    "color": "D2C4EC"
+  },
+  {
+    "slide": 19,
+    "text": "73%",
+    "x": 0.7,
+    "y": 4.62,
+    "w": 3.8,
+    "h": 0.89,
+    "size": 52,
+    "color": "C2A7FF"
+  },
+  {
+    "slide": 19,
+    "text": "smaller preview",
+    "x": 0.73,
+    "y": 5.78,
+    "w": 3.8,
+    "h": 0.37,
+    "size": 18,
+    "color": "D2C4EC"
+  },
+  {
+    "slide": 19,
+    "text": "18",
+    "x": 4.9,
+    "y": 4.62,
+    "w": 3.8,
+    "h": 0.89,
+    "size": 52,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 19,
+    "text": "inline SVG icons",
+    "x": 4.930000000000001,
+    "y": 5.78,
+    "w": 3.8,
+    "h": 0.37,
+    "size": 18,
+    "color": "D2C4EC"
+  },
+  {
+    "slide": 19,
+    "text": "25",
+    "x": 9.1,
+    "y": 4.62,
+    "w": 3.8,
+    "h": 0.89,
+    "size": 52,
+    "color": "FFFFFF"
+  },
+  {
+    "slide": 19,
+    "text": "inventoried assets",
+    "x": 9.129999999999999,
+    "y": 5.78,
+    "w": 3.8,
+    "h": 0.37,
+    "size": 18,
+    "color": "D2C4EC"
+  }
+]
