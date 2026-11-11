@@ -1,0 +1,18 @@
+[Unit]
+Description=AITU Microsoft bridge and teacher demo
+After=network.target
+
+[Service]
+Environment=BRIDGE_STORAGE_MODE=mariadb
+EnvironmentFile=-/home/nuras/.config/aitu-bridge/telegram.env
+Type=simple
+WorkingDirectory=/home/nuras/Documents/AITU/endterm
+Environment=BRIDGE_HEADLESS=1
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/nuras/Documents/AITU/endterm/venv/bin/python /home/nuras/Documents/AITU/endterm/bridge-test/app.py
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=AITU MariaDB backup every 48 hours (30-day retention)
+After=network.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/nuras/Documents/AITU/endterm/bridge-test
+ExecStart=/home/nuras/Documents/AITU/endterm/venv/bin/python /home/nuras/Documents/AITU/endterm/bridge-test/backup_mariadb.py --if-due
+UMask=0077
+TimeoutStartSec=15min
+Nice=10

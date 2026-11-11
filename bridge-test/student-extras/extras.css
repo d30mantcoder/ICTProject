@@ -1,0 +1,14 @@
+.demo-notice{padding:12px 14px;border:1px solid #f0d498;border-radius:10px;background:#fff8e8;color:#765008;font-size:13px;line-height:1.5}
+.discount-card{position:relative;padding-right:90px;min-height:145px}.discount-value{position:absolute;right:16px;top:22px;color:var(--blue);font-size:29px;font-weight:700}.discount-card h2{overflow-wrap:anywhere}.schedule-card strong{color:var(--blue);font-size:13px}.schedule-card h3{margin:8px 0;font-size:16px}
+.syllabus-button{display:block;width:100%;text-align:left;padding:18px;margin:10px 0;border:1px solid var(--line);border-radius:12px;background:white;color:var(--blue);font-weight:600;overflow-wrap:anywhere}.syllabus-button:hover{background:var(--tint)}
+.pdf-controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:14px 0}.pdf-controls button{min-width:44px;min-height:44px}.pdf-controls select{width:auto;max-width:100%;margin:0}.pdf-controls span{font-size:13px}.pdf-viewport{width:100%;overflow:auto;min-height:100px;background:#e9ecef;border:1px solid var(--line)}.pdf-viewport canvas{display:block;margin:0 auto;max-width:none;background:white}
+.pwa-help{font-size:14px;color:var(--ink);line-height:1.5;padding:12px;margin:0 0 16px;border:1px solid var(--line);border-radius:8px;background:var(--tint)}
+header .pwa-install{flex:none;min-height:40px;padding:8px;font-size:12px;margin:0;width:auto}
+body:not(.app-mode) .phone header{display:flex}
+body:not(.app-mode) header .menu-button,body:not(.app-mode) header .account{display:none}
+body:not(.app-mode) .phone main{top:64px}
+@media(max-width:600px){header:has(.pwa-install:not([hidden])) .header-brand{display:none}header:has(.pwa-install:not([hidden])){gap:8px}header .pwa-install{margin-left:auto}}
+@media(display-mode:standalone){body{padding:0}.phone{width:100%;height:100dvh;min-height:0;box-shadow:none}main{padding-bottom:max(24px,env(safe-area-inset-bottom))}}
+
+button.schedule-card{display:block;width:100%;text-align:left;background:white;color:var(--ink);border:1px solid var(--line);cursor:pointer}button.schedule-card:hover{background:var(--tint);border-color:var(--blue)}
+.classmates-form{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:20px 0}.classmates-form label{display:grid;gap:6px}.classmates-form input,.classmates-search input,.classmates-search select{width:100%;min-width:0;box-sizing:border-box;padding:10px;border:1px solid var(--line,#d6dbe5);border-radius:8px;font:inherit;background:var(--surface,#fff);color:inherit}.classmates-form button{align-self:end}.classmates-search{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 16px}.classmates-search input{flex:1 1 180px}.classmates-search select{width:auto;max-width:100%}

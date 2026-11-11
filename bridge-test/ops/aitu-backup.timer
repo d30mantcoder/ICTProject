@@ -1,0 +1,11 @@
+[Unit]
+Description=Check AITU 48-hour backup deadline and recover missed runs
+
+[Timer]
+OnCalendar=*-*-* *:*:00
+AccuracySec=1s
+Persistent=true
+Unit=aitu-backup.service
+
+[Install]
+WantedBy=timers.target
